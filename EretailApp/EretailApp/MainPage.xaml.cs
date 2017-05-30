@@ -102,13 +102,16 @@ namespace EretailApp
 
 
                 var page1 = new MasterPageItem() { Icon1 = "prod.png", Title = "Product", TargetType = typeof(ProductDetails) };
-                var page2 = new MasterPageItem() { Icon1 = "categeory.png", Title = "Category", TargetType = typeof(categoryForm) };
-                var page3 = new MasterPageItem() { Icon1 = "departmnt.png", Title = "Department" };
-                var page4 = new MasterPageItem() { Icon1 = "brand.png", Title = "Brand" };
-                var page5 = new MasterPageItem() { Icon1 = "supply.png", Title = "Vendor" };
-                var page6 = new MasterPageItem() { Icon1 = "tax.png", Title = "Tax" };
-                var page7 = new MasterPageItem() { Title = "Customer", Icon1 = "customer.png", TargetType = typeof(Customer) };
-              var page8 = new MasterPageItem() { Icon1 = "customer.png", Title = "Employee" };
+                var page2 = new MasterPageItem() { Icon1 = "prod.png", Title = "Menu Master", TargetType = typeof(ProductDetails) };
+                var page3 = new MasterPageItem() { Icon1 = "prod.png", Title = "Kitchen Master", TargetType = typeof(ProductDetails) };
+                var page4 = new MasterPageItem() { Icon1 = "prod.png", Title = "Combi Master", TargetType = typeof(ProductDetails) };
+                var page5 = new MasterPageItem() { Icon1 = "categeory.png", Title = "Category", TargetType = typeof(categoryForm) };
+                var page6 = new MasterPageItem() { Icon1 = "departmnt.png", Title = "Department" };
+                var page7 = new MasterPageItem() { Icon1 = "brand.png", Title = "Brand" };
+                var page8 = new MasterPageItem() { Icon1 = "supply.png", Title = "Vendor" };
+                var page9 = new MasterPageItem() { Icon1 = "tax.png", Title = "Tax" };
+                var page10 = new MasterPageItem() { Title = "Customer", Icon1 = "customer.png", TargetType = typeof(Customer) };
+              var page11 = new MasterPageItem() { Icon1 = "customer.png", Title = "Employee" };
                 //var page6 = new MasterPageItem() { Title = "Login", Icon = "bui.png", TargetType = typeof(Page3) };
                 //var page7 = new MasterPageItem() { Title = "Register", Icon = "sim.png", TargetType = typeof(Page1) };
                 //var page8 = new MasterPageItem() { Title = "MainScreen", Icon = "fire.png", TargetType = typeof(Page2) };
@@ -123,7 +126,9 @@ namespace EretailApp
                 menuList1.Add(page6);
                 menuList1.Add(page7);
                 menuList1.Add(page8);
-               // menuList1.Add(page9);
+               menuList1.Add(page9);
+                menuList1.Add(page10);
+                menuList1.Add(page11);
                 navigationDrawerList1.IsVisible = true;
                 // Setting our list to be ItemSource for ListView in MainPage.xaml
                 navigationDrawerList1.ItemsSource = menuList1;
@@ -230,7 +235,7 @@ namespace EretailApp
             {
                 //Navigation.PushModalAsync(new ProductDetails());
                 Detail = new EmployeeForm();
-                headertitle.Text = item.Title;
+                //headertitle.Text = item.Title;
                
 
 
@@ -240,7 +245,7 @@ namespace EretailApp
             {
                 //Navigation.PushModalAsync(new ProductDetails());
                 Detail = new ProductDetails();
-                headertitle.Text = item.Title;
+              //  headertitle.Text = item.Title;
               
 
             }
@@ -250,7 +255,7 @@ namespace EretailApp
                // Navigation.PushModalAsync(new categoryForm());
 
                Detail = new categoryForm();
-                headertitle.Text = item.Title;
+               // headertitle.Text = item.Title;
 
             }
 
@@ -260,7 +265,7 @@ namespace EretailApp
                 // Navigation.PushModalAsync(new categoryForm());
 
                 Detail = new DeptForm();
-                headertitle.Text = item.Title;
+              //  headertitle.Text = item.Title;
 
             }
 
@@ -269,7 +274,7 @@ namespace EretailApp
                 // Navigation.PushModalAsync(new categoryForm());
 
                 Detail = new BrandForm();
-                headertitle.Text = item.Title;
+               // headertitle.Text = item.Title;
 
             }
 
@@ -279,7 +284,7 @@ namespace EretailApp
                 // Navigation.PushModalAsync(new categoryForm());
 
                 Detail = new TaxForm();
-                headertitle.Text = item.Title;
+               // headertitle.Text = item.Title;
 
             }
 
@@ -290,7 +295,7 @@ namespace EretailApp
                 // Navigation.PushModalAsync(new categoryForm());
 
                 Detail = new SupplierFormxaml();
-                headertitle.Text = item.Title;
+               // headertitle.Text = item.Title;
 
 
             }
@@ -303,7 +308,25 @@ namespace EretailApp
 
 
 
-          
+
+            if (item.Title.Equals("Menu Master"))
+            {
+                Detail = new MenuMaster();
+
+            }
+
+            if (item.Title.Equals("Kitchen Master"))
+            {
+                Detail = new KitchenMaster();
+
+            }
+            if (item.Title.Equals("Combi Master"))
+            {
+                Detail = new CombiMaster();
+
+            }
+
+
 
 
 

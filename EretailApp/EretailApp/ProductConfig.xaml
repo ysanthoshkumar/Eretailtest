@@ -110,12 +110,13 @@
                     <local:BoxBorderEntry  Placeholder="Enter Product Code"    HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
                     <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
                     <local:BoxBorderEntry  Placeholder="Enter Short Description"    HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+                    <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
                   </StackLayout>
 
                   <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  Padding="5">
 
                     <local:BoxBorderEntry  Placeholder="Enter Long Description"  HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
-
+                    <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
                    </StackLayout>
                 </StackLayout>
                   <StackLayout HorizontalOptions="End"  > 
@@ -136,7 +137,7 @@
                   <Picker x:Name="CategoryPicker"  TextColor="#000000"  
                        HorizontalOptions="FillAndExpand"   BackgroundColor="White"   >
                     <Picker.Items>
-                      <x:String>Add NewCategory</x:String>
+                      <x:String>Category</x:String>
                       </Picker.Items>
                         </Picker>
                     <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
@@ -145,7 +146,7 @@
                   <Picker x:Name="DepartmentPicker"  TextColor="#000000"  
                      HorizontalOptions="FillAndExpand"   BackgroundColor="White"   >
                     <Picker.Items>
-                      <x:String>Add NewDepartment</x:String>
+                      <x:String>Department</x:String>
                     </Picker.Items>
                   </Picker>
                     <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
@@ -157,7 +158,7 @@
                       <x:String>Brand</x:String>
                     </Picker.Items>
                   </Picker>
-                    <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
+                   
                   </StackLayout>
                 </StackLayout>
 

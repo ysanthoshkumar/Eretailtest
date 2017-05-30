@@ -141,10 +141,10 @@ namespace EretailApp
         {
             Navigation.PushModalAsync(new ProductConfig());
         }
-        public void AddProductTwo(Object o, EventArgs e)
-        {
-            Navigation.PushModalAsync(new ProductConfig());
-        }
+        //public void AddProductTwo(Object o, EventArgs e)
+        //{
+        //    Navigation.PushModalAsync(new ProductConfig());
+        //}
     }
 
 }

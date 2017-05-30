@@ -66,6 +66,15 @@
     <Compile Include="EmployeeForm.xaml.cs">
       <DependentUpon>EmployeeForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CombiMaster.xaml.cs">
+      <DependentUpon>CombiMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\KitchenMaster.xaml.cs">
+      <DependentUpon>KitchenMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MenuMaster.xaml.cs">
+      <DependentUpon>MenuMaster.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MySwitch.cs" />
     <Compile Include="Views\BillPrinting.xaml.cs">
       <DependentUpon>BillPrinting.xaml</DependentUpon>
@@ -124,6 +133,9 @@
     </Compile>
     <Compile Include="Views\Logout.xaml.cs">
       <DependentUpon>Logout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MenuMasterConfig.xaml.cs">
+      <DependentUpon>MenuMasterConfig.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\PaymentMode.xaml.cs">
       <DependentUpon>PaymentMode.xaml</DependentUpon>
@@ -394,6 +406,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MenuMaster.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\KitchenMaster.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CombiMaster.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MenuMasterConfig.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

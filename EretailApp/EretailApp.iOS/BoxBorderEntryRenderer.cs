@@ -20,7 +20,7 @@ namespace EretailApp.iOS
             {
                 Control.TextColor = UIColor.LightGray;
                 Control.Layer.BorderColor = UIColor.LightGray.CGColor;
-                Control.Layer.BorderWidth = 3.0f;
+                Control.Layer.BorderWidth = 1.0f;    
             }
         }
     }

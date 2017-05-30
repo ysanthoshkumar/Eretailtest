@@ -172,12 +172,12 @@ E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.Bu
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.PaymentMode.xaml.g.cs
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.BillPrinting.xaml.g.cs
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.HardwareSetting.xaml.g.cs
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.MenuMaster.xaml.g.cs
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.KitchenMaster.xaml.g.cs
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.CombiMaster.xaml.g.cs
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.MenuMasterConfig.xaml.g.cs
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.pdb
-E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.dll.mdb
-E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\EretailApp.dll.mdb
-E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.dll.mdb
-E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\EretailApp.dll.mdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.dll.mdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\EretailApp.dll.mdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.dll.mdb

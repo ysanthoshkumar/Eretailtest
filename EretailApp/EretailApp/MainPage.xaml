@@ -47,7 +47,7 @@
              This StackLayout you can use for other
              data that you want to have in your menu drawer
         -->
-                    <StackLayout Orientation="Horizontal"
+              <!--  <StackLayout Orientation="Horizontal"
                        HorizontalOptions="Center" >
                  
                       <StackLayout  HorizontalOptions="Center"  VerticalOptions="Center">
@@ -60,6 +60,7 @@
 
                       </StackLayout>
                 </StackLayout>
+                 -->
               
                 <ListView x:Name="navigationDrawerList"
                   RowHeight="45"

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:EretailApp"
+             x:Class="EretailApp.Views.CombiMaster">
+  <ContentPage.Resources>
+
+    <ResourceDictionary x:Name="AppDictionary">
+      <Color x:Key="BackgroundColor">#FFFFFF</Color>
+      <Color x:Key="BorderColor">#FF696565</Color>
+      <Style x:Key="InternalViewStyle" TargetType="ContentView">
+        <Setter Property="BackgroundColor"
+            Value="{StaticResource BackgroundColor}"/>
+        <Setter Property="HorizontalOptions" Value="Fill"/>
+        <Setter Property="Padding" Value="1,1,1,1"></Setter>
+      </Style>
+      <Style x:Key="BorderStyle" TargetType="ContentView">
+        <Setter Property="BackgroundColor" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Padding" Value="1,1,1,1"></Setter>
+      </Style>
+      <Style x:Key="plainEntry" TargetType="Entry">
+        <Setter Property="BackgroundColor" Value="#eee"/>
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="FontSize" Value="16" />
+      </Style>
+
+      <Style x:Key="ButtonStyle" TargetType="Button">
+        <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+        <Setter Property="BackgroundColor" Value="#41af4b"/>
+        <Setter Property="BorderColor" Value="Blue"/>
+        <Setter Property="HeightRequest" Value="42"/>
+        <Setter Property="BorderRadius" Value="5"/>
+        <Setter Property="BorderWidth" Value="0" />
+        <Setter Property="TextColor" Value="White"/>
+      </Style>
+
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+
+  <StackLayout Orientation="Vertical"  VerticalOptions="FillAndExpand"  BackgroundColor="#FFFFFF" HorizontalOptions="FillAndExpand" Padding="3"  Margin="3" >
+
+
+    <StackLayout   HorizontalOptions="FillAndExpand"  >
+      <Grid BackgroundColor="#FE7C08"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="5" >
+        <Grid.ColumnDefinitions >
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="100" />
+          <ColumnDefinition Width="100" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <Label  Text="Combi Master"  VerticalTextAlignment="Center"     Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"   HorizontalTextAlignment="Center"    FontSize="20"  FontFamily="Bold" TextColor="White"></Label>
+
+        <Button  Text="Cancel"    Grid.Row="0" Grid.Column="2" TextColor="White" BackgroundColor="#446a81" ></Button>
+        <Button  Text="Create"  Grid.Row="0" Grid.Column="3" Style="{StaticResource ButtonStyle}"></Button>
+      </Grid>
+    </StackLayout>
+
+
+
+    <ContentView Padding="0" HorizontalOptions="FillAndExpand" Margin="0,0,0,10" >
+      <ContentView Style="{StaticResource BorderStyle}" >
+        <ContentView Style="{StaticResource InternalViewStyle}">
+          <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  Padding="5" Spacing="5">
+              <Label  Text="ItemCode" WidthRequest="60" VerticalTextAlignment="Center"    HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+              <Label  Text="Item Name"  WidthRequest="60" VerticalTextAlignment="Center"    HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+              <Label  Text="Qty"  WidthRequest="60" VerticalTextAlignment="Center"    HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+              <Label  Text="Item Price"  WidthRequest="60" VerticalTextAlignment="Center"    HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+              <Label  Text="Optional Combi"  WidthRequest="60" VerticalTextAlignment="Center"    HorizontalOptions="End"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+              
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  Padding="5" Spacing="5">
+              <local:BoxBorderEntry  Placeholder="Item Code"  WidthRequest="60"  HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+              <local:BoxBorderEntry  Placeholder="Item Name"   WidthRequest="60" HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+              <Label  Text="20"  VerticalTextAlignment="Center" WidthRequest="60"   HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+              <local:BoxBorderEntry  Placeholder="Item Price" WidthRequest="60"     HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+               <Switch HorizontalOptions="End" WidthRequest="60"  VerticalOptions="Center" />
+            </StackLayout>
+          </StackLayout>
+        </ContentView>
+      </ContentView>
+    </ContentView>
+  
+  </StackLayout>
+
+</ContentPage>

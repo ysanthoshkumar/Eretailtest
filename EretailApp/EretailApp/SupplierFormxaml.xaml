@@ -57,7 +57,7 @@
 
         </Image>
         -->
-        <Label   VerticalTextAlignment="Center"     Grid.Row="0" Grid.Column="0"   HorizontalOptions="Start"    FontSize="20"  FontFamily="Bold" TextColor="White"></Label>
+        <Label   VerticalTextAlignment="Center"   Text="Vendor"  Grid.Row="0" Grid.Column="1"   HorizontalOptions="Start"    FontSize="20"  FontFamily="Bold" TextColor="White"></Label>
         <Button  x:Name="btnImport"   Text="Import"   TextColor="White" BackgroundColor="#446a81" Grid.Row="0" Grid.Column="2" ></Button>
         <Button x:Name="btnAddProduct" Text="Create"   TextColor="White" BackgroundColor="#41af4b" Grid.Row="0" Grid.Column="3"  Clicked="AddSupplier"></Button>
       </Grid>
