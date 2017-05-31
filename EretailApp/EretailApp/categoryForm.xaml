@@ -58,7 +58,7 @@
         <Label  x:Name="categoryTitle" Text="Category"  VerticalTextAlignment="Center"    Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"   HorizontalTextAlignment="Center"    FontSize="20"  FontFamily="Bold" TextColor="White"></Label>
 
         <Button  Text="Cancel"    Grid.Row="0" Grid.Column="2" TextColor="White" BackgroundColor="#446a81" Clicked="ADDCategory1" ></Button>
-        <Button  Text="Create"  Grid.Row="0" Grid.Column="3" Style="{StaticResource ButtonStyle}"  Clicked="ADDCategory"></Button>
+        <Button  Text="Create"  Grid.Row="0" Grid.Column="3" TextColor="White" BackgroundColor="#41af4b"  Clicked="ADDCategory"></Button>
       </Grid>
     </StackLayout>
 
@@ -122,7 +122,7 @@
         </Grid.RowDefinitions>
      
          <Button  Text="Cancel"    Grid.Row="0" Grid.Column="2" TextColor="White" BackgroundColor="#446a81" ></Button>
-        <Button  Text="Save" Style="{StaticResource ButtonStyle}"  Grid.Row="0" Grid.Column="3"   ></Button>
+        <Button  Text="Save" TextColor="White" BackgroundColor="#41af4b"  Grid.Row="0" Grid.Column="3"   ></Button>
       </Grid>
      </StackLayout>
       </StackLayout>

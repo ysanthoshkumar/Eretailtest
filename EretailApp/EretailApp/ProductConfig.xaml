@@ -71,7 +71,7 @@
         <Label  Text="Product" VerticalTextAlignment="Center"    Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"   HorizontalTextAlignment="Center"    FontSize="20"  FontFamily="Bold" TextColor="White"></Label>
         
         <Button  Text="Cancel"        Grid.Row="0" Grid.Column="2" TextColor="White" BackgroundColor="#446a81" ></Button>
-        <Button  Text="Save" Style="{StaticResource ButtonStyle}"  Grid.Row="0" Grid.Column="3"   ></Button>
+        <Button  Text="Save" TextColor="White" BackgroundColor="#41af4b" Grid.Row="0" Grid.Column="3"   ></Button>
       </Grid>
     </StackLayout>
 
@@ -135,7 +135,7 @@
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="5" >
                   <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                   <Picker x:Name="CategoryPicker"  TextColor="#000000"  
-                       HorizontalOptions="FillAndExpand"   BackgroundColor="White"   >
+                       HorizontalOptions="FillAndExpand"  Title="Choose Category"   BackgroundColor="White"   >
                     <Picker.Items>
                       <x:String>Category</x:String>
                       </Picker.Items>
@@ -144,7 +144,7 @@
                   </StackLayout>
                   <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                   <Picker x:Name="DepartmentPicker"  TextColor="#000000"  
-                     HorizontalOptions="FillAndExpand"   BackgroundColor="White"   >
+                     HorizontalOptions="FillAndExpand"  Title="Choose Department"  BackgroundColor="White"   >
                     <Picker.Items>
                       <x:String>Department</x:String>
                     </Picker.Items>

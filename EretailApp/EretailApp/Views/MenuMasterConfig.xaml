@@ -69,7 +69,7 @@
         <Label  Text="Menu Master" VerticalTextAlignment="Center"    Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"   HorizontalTextAlignment="Center"    FontSize="20"  FontFamily="Bold" TextColor="White"></Label>
 
         <Button  Text="Cancel"        Grid.Row="0" Grid.Column="2" TextColor="White" BackgroundColor="#446a81" ></Button>
-        <Button  Text="Save" Style="{StaticResource ButtonStyle}"  Grid.Row="0" Grid.Column="3"   ></Button>
+        <Button  Text="Save" TextColor="White" BackgroundColor="#41af4b"  Grid.Row="0" Grid.Column="3"   ></Button>
       </Grid>
     </StackLayout>
 
@@ -133,7 +133,7 @@
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="5" >
                   <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                     <Picker x:Name="CategoryPicker"  TextColor="#000000"
-                         HorizontalOptions="FillAndExpand"   BackgroundColor="White"   >
+                         HorizontalOptions="FillAndExpand" Title="Choose Category"   BackgroundColor="White"   >
                       <Picker.Items>
                         <x:String>Category</x:String>
                       </Picker.Items>
@@ -141,7 +141,7 @@
                     <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
                   </StackLayout>
                   <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                    <Picker x:Name="DepartmentPicker"  TextColor="#000000"
+                    <Picker x:Name="DepartmentPicker"  Title="Choose Department" TextColor="#000000"
                        HorizontalOptions="FillAndExpand"   BackgroundColor="White"   >
                       <Picker.Items>
                         <x:String>Department</x:String>
@@ -187,8 +187,32 @@
                 <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
                 <local:BoxBorderEntry  Placeholder="Enter MarkUp / Down"   WidthRequest="60"   HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
                 <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
-                <local:BoxBorderEntry  Placeholder="Enter Sales Price"   WidthRequest="60"   HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+                <StackLayout Orientation="Vertical" >
+                <local:BoxBorderEntry x:Name="entrySP"  Placeholder="Enter Sales Price"   WidthRequest="60"   HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+                  <StackLayout x:Name="SpSl" Orientation="Vertical" >
+                  <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
+                   <Label  Text="Take Away" VerticalTextAlignment="Center"     HorizontalOptions="Start"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+                    <local:BoxBorderEntry  Placeholder="Enter Price"   Keyboard="Numeric"  HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+                   </StackLayout>
+                    
+                  <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
+                 <Label  Text="Dine In" VerticalTextAlignment="Center"   HorizontalOptions="Start"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+                    <local:BoxBorderEntry  Placeholder="Enter Price"   Keyboard="Numeric"  HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+                  </StackLayout>
+                    
+                  <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
+                   <Label  Text="Delivery" VerticalTextAlignment="Center"     HorizontalOptions="Start"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+                    <local:BoxBorderEntry  Placeholder="Enter Price"  Keyboard="Numeric"   HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+                  </StackLayout>
 
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
+                      <Button  Text="Cancel"  WidthRequest="100"   HorizontalOptions="End"    TextColor="White" BackgroundColor="#446a81"></Button>
+                      <Button  Text="Save"   WidthRequest="100"   HorizontalOptions="End" TextColor="White" BackgroundColor="#41af4b" ></Button>
+                    </StackLayout>
+
+                  </StackLayout>
+                  
+                </StackLayout>
                 <local:BoxBorderEntry  Placeholder="Enter MRP"   WidthRequest="60"   HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
                 <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
               </StackLayout>

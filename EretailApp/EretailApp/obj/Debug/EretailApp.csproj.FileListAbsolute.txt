@@ -140,7 +140,6 @@ E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\Xamarin.Forms.Core.
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\Xamarin.Forms.Platform.pdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\Xamarin.Forms.Xaml.pdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\Xamarin.Forms.Xaml.xml
-E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.csprojResolveAssemblyReference.cache
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.MainPage.xaml.g.cs
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.App.xaml.g.cs
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.Home.xaml.g.cs
@@ -182,7 +181,7 @@ E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.Me
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.MyPopupPage.xaml.g.cs
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.pdb
-E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.dll.mdb
-E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\EretailApp.dll.mdb
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.csprojResolveAssemblyReference.cache
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.DisplayAlert.xaml.g.cs
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.dll.mdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\EretailApp.dll.mdb
