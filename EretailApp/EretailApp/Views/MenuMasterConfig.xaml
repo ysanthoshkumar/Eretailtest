@@ -150,10 +150,10 @@
                     <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
                   </StackLayout>
                   <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                    <Picker x:Name="BrandPicker"  TextColor="#000000"  Title="Choose Brand"
+                    <Picker x:Name="KitchenPicker"  TextColor="#000000"  Title="Choose Kitchen"
                          HorizontalOptions="FillAndExpand"   BackgroundColor="White"   >
                       <Picker.Items>
-                        <x:String>Brand</x:String>
+                        <x:String>Kitchen</x:String>
                       </Picker.Items>
                     </Picker>
                    

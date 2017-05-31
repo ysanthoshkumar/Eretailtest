@@ -130,6 +130,8 @@ E:\Medium\Github\EretailApp\EretailApp\EretailApp\obj\Debug\EretailApp.dll.mdb
 E:\Medium\Github\EretailApp\EretailApp\EretailApp\bin\Debug\EretailApp.dll.mdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\EretailApp.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\EretailApp.pdb
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\Rg.Plugins.Popup.dll
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\Rg.Plugins.Popup.Platform.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\Xamarin.Forms.Core.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\Xamarin.Forms.Platform.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\Xamarin.Forms.Xaml.dll
@@ -138,6 +140,7 @@ E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\Xamarin.Forms.Core.
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\Xamarin.Forms.Platform.pdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\Xamarin.Forms.Xaml.pdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\Xamarin.Forms.Xaml.xml
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.csprojResolveAssemblyReference.cache
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.MainPage.xaml.g.cs
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.App.xaml.g.cs
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.Home.xaml.g.cs
@@ -176,6 +179,7 @@ E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.Me
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.KitchenMaster.xaml.g.cs
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.CombiMaster.xaml.g.cs
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.Views.MenuMasterConfig.xaml.g.cs
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.MyPopupPage.xaml.g.cs
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.pdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Debug\EretailApp.dll.mdb

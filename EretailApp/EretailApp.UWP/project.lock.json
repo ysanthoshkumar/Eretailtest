@@ -261,6 +261,21 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Rg.Plugins.Popup/1.0.4": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.49"
+        },
+        "compile": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "System.AppContext/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.0",
@@ -2003,6 +2018,21 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Rg.Plugins.Popup/1.0.4": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.49"
+        },
+        "compile": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -3653,6 +3683,21 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Rg.Plugins.Popup/1.0.4": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.49"
+        },
+        "compile": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -5270,6 +5315,21 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Rg.Plugins.Popup/1.0.4": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.49"
+        },
+        "compile": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -6925,6 +6985,21 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Rg.Plugins.Popup/1.0.4": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.49"
+        },
+        "compile": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -8542,6 +8617,21 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Rg.Plugins.Popup/1.0.4": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.49"
+        },
+        "compile": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -10195,6 +10285,21 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Rg.Plugins.Popup/1.0.4": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.49"
+        },
+        "compile": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Rg.Plugins.Popup.Platform.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
+          "lib/uap10.0/Rg.Plugins.Popup.dll": {}
         }
       },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
@@ -12199,6 +12304,32 @@
         "ref/net46/Microsoft.Win32.Primitives.dll",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
+      ]
+    },
+    "Rg.Plugins.Popup/1.0.4": {
+      "sha512": "KTpeQmUT3RgTkCIwtsdGRuNh6gLlrZ78f2kW6gwo9UmTBR2RIHMx/Tc6FZEplFQBVApJ8e7S7EnM/SuZ+9jMCg==",
+      "type": "package",
+      "path": "rg.plugins.popup/1.0.4",
+      "files": [
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Platform.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.Platform.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.Platform.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.dll",
+        "lib/portable-win+net45+wp8+win8+wpa81/Rg.Plugins.Popup.Platform.dll",
+        "lib/portable-win+net45+wp8+win8+wpa81/Rg.Plugins.Popup.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.Platform.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.dll",
+        "lib/wpa81/Rg.Plugins.Popup.Platform.dll",
+        "lib/wpa81/Rg.Plugins.Popup.WinPhone.dll",
+        "lib/wpa81/Rg.Plugins.Popup.dll",
+        "rg.plugins.popup.1.0.4.nupkg.sha512",
+        "rg.plugins.popup.nuspec"
       ]
     },
     "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -15149,6 +15280,7 @@
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
+      "Rg.Plugins.Popup >= 1.0.4",
       "System.Data.SQLite >= 1.0.105",
       "Xamarin.Forms >= 2.3.4.231"
     ],

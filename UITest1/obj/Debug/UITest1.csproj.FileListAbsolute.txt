@@ -10,8 +10,17 @@ E:\Medium\Github\EretailApp\UITest1\obj\Debug\UITest1.pdb
 E:\Medium\Github\Eretailtest\UITest1\bin\Debug\UITest1.dll
 E:\Medium\Github\Eretailtest\UITest1\bin\Debug\UITest1.pdb
 E:\Medium\Github\Eretailtest\UITest1\bin\Debug\nunit.framework.dll
+E:\Medium\Github\Eretailtest\UITest1\bin\Debug\Xamarin.Forms.Core.dll
+E:\Medium\Github\Eretailtest\UITest1\bin\Debug\Xamarin.Forms.Platform.dll
+E:\Medium\Github\Eretailtest\UITest1\bin\Debug\Xamarin.Forms.Xaml.dll
 E:\Medium\Github\Eretailtest\UITest1\bin\Debug\Xamarin.UITest.dll
 E:\Medium\Github\Eretailtest\UITest1\bin\Debug\nunit.framework.xml
+E:\Medium\Github\Eretailtest\UITest1\bin\Debug\Xamarin.Forms.Core.pdb
+E:\Medium\Github\Eretailtest\UITest1\bin\Debug\Xamarin.Forms.Core.xml
+E:\Medium\Github\Eretailtest\UITest1\bin\Debug\Xamarin.Forms.Platform.pdb
+E:\Medium\Github\Eretailtest\UITest1\bin\Debug\Xamarin.Forms.Xaml.pdb
+E:\Medium\Github\Eretailtest\UITest1\bin\Debug\Xamarin.Forms.Xaml.xml
 E:\Medium\Github\Eretailtest\UITest1\bin\Debug\Xamarin.UITest.xml
+E:\Medium\Github\Eretailtest\UITest1\obj\Debug\UITest1.csprojResolveAssemblyReference.cache
 E:\Medium\Github\Eretailtest\UITest1\obj\Debug\UITest1.dll
 E:\Medium\Github\Eretailtest\UITest1\obj\Debug\UITest1.pdb

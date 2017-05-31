@@ -62,25 +62,77 @@
 
 
 
+
     <ContentView Padding="0" HorizontalOptions="FillAndExpand" Margin="0,0,0,10" >
       <ContentView Style="{StaticResource BorderStyle}" >
         <ContentView Style="{StaticResource InternalViewStyle}">
           <StackLayout Orientation="Vertical">
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  Padding="5" Spacing="5">
-              <Label  Text="ItemCode" WidthRequest="60" VerticalTextAlignment="Center"    HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
-              <Label  Text="Item Name"  WidthRequest="60" VerticalTextAlignment="Center"    HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
-              <Label  Text="Qty"  WidthRequest="60" VerticalTextAlignment="Center"    HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
-              <Label  Text="Item Price"  WidthRequest="60" VerticalTextAlignment="Center"    HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
-              <Label  Text="Optional Combi"  WidthRequest="60" VerticalTextAlignment="Center"    HorizontalOptions="End"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+
+              <SearchBar x:Name="searchCombi" Placeholder="Search here"    HorizontalOptions="FillAndExpand" PlaceholderColor="#C8C8C8"  TextColor="Gray"   CancelButtonColor="Gray" SearchButtonPressed="SearchCombiclick"></SearchBar>
+
+
+            </StackLayout>
+
+
+            <StackLayout HorizontalOptions="FillAndExpand" Padding="5" Spacing="5"  >
+              <ListView x:Name="CombiList"  
+                    RowHeight="35">
+                <ListView.ItemTemplate>
+                  <DataTemplate>
+                    <ViewCell>
+
+                      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                        <Label Text="{Binding CombiCode}" HeightRequest="35"  TextColor="Black" HorizontalTextAlignment="Start"  VerticalTextAlignment="Center"  HorizontalOptions="FillAndExpand"   FontSize="16" ></Label>
+                        <Label Text="{Binding CombiPrice}" HeightRequest="35"  TextColor="Black" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  HorizontalOptions="End"   FontSize="16" ></Label>
+
+                      </StackLayout>
+                    </ViewCell>
+                  </DataTemplate>
+                </ListView.ItemTemplate>
+              </ListView>
+            </StackLayout>
+          </StackLayout>
+        </ContentView>
+      </ContentView>
+    </ContentView>
+    
+    
+    
+    
+    
+    
+
+    <ContentView Padding="0" HorizontalOptions="FillAndExpand" Margin="0,0,0,10" >
+      <ContentView Style="{StaticResource BorderStyle}" >
+        <ContentView Style="{StaticResource InternalViewStyle}">
+          <StackLayout Orientation="Vertical">
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  Padding="5" Spacing="5">
+              <Label  Text="Combi" WidthRequest="60" VerticalTextAlignment="Center"    HorizontalOptions="Start"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+              <local:BoxBorderEntry   WidthRequest="40" Placeholder="Combi Code "    HorizontalOptions="FillAndExpand"   TextColor="#FF6B6868" PlaceholderColor="#FF6B6868"/>
+              <Label  Text="Combi Name"  WidthRequest="60" VerticalTextAlignment="Center"    HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+             
+
+            </StackLayout>
+            
+            
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  Padding="5" Spacing="5">
+              <Label  Text="ItemCode" WidthRequest="40" VerticalTextAlignment="Center"    HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+              <Label  Text="Item Name"  WidthRequest="80" VerticalTextAlignment="Center"    HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+              <Label  Text="Qty"  WidthRequest="40" VerticalTextAlignment="Center"    HorizontalOptions="Start"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+              <Label  Text="Item Price"  WidthRequest="35" VerticalTextAlignment="Center"     HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+              <Label  Text="Optional Combi"  WidthRequest="60" VerticalTextAlignment="Center"    HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
               
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  Padding="5" Spacing="5">
-              <local:BoxBorderEntry  Placeholder="Item Code"  WidthRequest="60"  HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
-              <local:BoxBorderEntry  Placeholder="Item Name"   WidthRequest="60" HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
-              <Label  Text="20"  VerticalTextAlignment="Center" WidthRequest="60"   HorizontalOptions="FillAndExpand"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
-              <local:BoxBorderEntry  Placeholder="Item Price" WidthRequest="60"     HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
-               <Switch HorizontalOptions="End" WidthRequest="60"  VerticalOptions="Center" />
+              <local:BoxBorderEntry  Placeholder="Item Code"  WidthRequest="40"  HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+              <local:BoxBorderEntry  Placeholder="Item Name"   WidthRequest="80" HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+              <Label  Text="20"  VerticalTextAlignment="Center" WidthRequest="40"   HorizontalOptions="Start"   HorizontalTextAlignment="Start"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+              <local:BoxBorderEntry  Placeholder="Item Price" WidthRequest="35"     HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+               <Switch HorizontalOptions="FillAndExpand" WidthRequest="60" Toggled="popup" VerticalOptions="Center" />
             </StackLayout>
           </StackLayout>
         </ContentView>

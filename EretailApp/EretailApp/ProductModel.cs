@@ -48,6 +48,9 @@ namespace EretailApp
         public string PaymentMode { get; set; }
         public string HourlySales { get; set; }
         public string DayendSales { get; set; }
+        public string CombiCode { get; set; }
+        public string CombiName { get; set; }
+        public string CombiPrice { get; set; }
 
     }
 }

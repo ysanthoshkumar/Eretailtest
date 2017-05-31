@@ -24,7 +24,7 @@ namespace EretailApp.Views {
         private global::Xamarin.Forms.Picker DepartmentPicker;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Picker BrandPicker;
+        private global::Xamarin.Forms.Picker KitchenPicker;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
@@ -32,7 +32,7 @@ namespace EretailApp.Views {
             AppDictionary = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ResourceDictionary>(this, "AppDictionary");
             CategoryPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "CategoryPicker");
             DepartmentPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "DepartmentPicker");
-            BrandPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "BrandPicker");
+            KitchenPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "KitchenPicker");
         }
     }
 }

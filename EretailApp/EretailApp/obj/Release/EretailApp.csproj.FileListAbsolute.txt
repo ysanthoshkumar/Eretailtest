@@ -99,3 +99,5 @@ E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Release\EretailApp.Views.
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Release\EretailApp.Views.MenuMasterConfig.xaml.g.cs
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Release\EretailApp.dll.mdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Release\EretailApp.dll.mdb
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp\obj\Release\EretailApp.dll.mdb
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Release\EretailApp.dll.mdb

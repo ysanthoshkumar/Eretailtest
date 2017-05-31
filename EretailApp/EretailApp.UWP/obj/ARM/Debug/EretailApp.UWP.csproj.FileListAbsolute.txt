@@ -623,6 +623,9 @@ E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\bin\ARM\Debug\System.Xml.
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\bin\ARM\Debug\System.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\bin\ARM\Debug\Microsoft.VisualBasic.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\bin\ARM\Debug\Microsoft.Win32.Primitives.dll
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\bin\ARM\Debug\Rg.Plugins.Popup.Platform.dll
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\bin\ARM\Debug\Rg.Plugins.Popup.UWP.dll
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\bin\ARM\Debug\Rg.Plugins.Popup.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\bin\ARM\Debug\System.Private.DataContractSerialization.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\bin\ARM\Debug\System.AppContext.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\bin\ARM\Debug\System.Collections.dll

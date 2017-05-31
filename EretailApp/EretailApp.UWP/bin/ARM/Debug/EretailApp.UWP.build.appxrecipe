@@ -70,6 +70,15 @@
     <AppxPackagedFile Include="C:\Users\ecpldev\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ecpldev\.nuget\packages\Rg.Plugins.Popup\1.0.4\lib\uap10.0\Rg.Plugins.Popup.Platform.dll">
+      <PackagePath>Rg.Plugins.Popup.Platform.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ecpldev\.nuget\packages\Rg.Plugins.Popup\1.0.4\lib\uap10.0\Rg.Plugins.Popup.UWP.dll">
+      <PackagePath>Rg.Plugins.Popup.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ecpldev\.nuget\packages\Rg.Plugins.Popup\1.0.4\lib\uap10.0\Rg.Plugins.Popup.dll">
+      <PackagePath>Rg.Plugins.Popup.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ecpldev\.nuget\packages\runtime.any.System.Private.DataContractSerialization\4.1.0\lib\netcore50\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
     </AppxPackagedFile>
