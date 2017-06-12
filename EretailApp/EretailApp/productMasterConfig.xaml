@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:local="clr-namespace:EretailApp"
+             BackgroundImage="sharukh.png"
+             x:Class="EretailApp.DummyproductForm">
+  
+      <StackLayout Padding="0" Spacing="0" Orientation="Vertical"  Margin="10">
+   
+    <StackLayout   Orientation="Vertical"  Padding="5" Spacing="5">
+      <Frame HasShadow="True"  CornerRadius="5"     BackgroundColor="#FEF0E3" HorizontalOptions="FillAndExpand">
+        <Grid BackgroundColor="Transparent"    HorizontalOptions="FillAndExpand" >
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+        
+       
+          </Grid.ColumnDefinitions>
+           <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+          </Grid.RowDefinitions>
+          
+            <Image
+                        Aspect="AspectFill"
+                        Margin="10"
+                          Source="leftcir.png"
+                    VerticalOptions="Center"
+                         HorizontalOptions="Start"
+                    Grid.Row="0" Grid.Column="0">
+              <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                            Tapped="back"
+                            />
+              </Image.GestureRecognizers>
+
+
+            </Image>
+      
+          <Label  Text="Product" VerticalTextAlignment="Center"    Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"   HorizontalTextAlignment="Center"    FontSize="20"  FontFamily="Bold" TextColor="Black"></Label>
+          <Button  Text="Cancel"        Grid.Row="0" Grid.Column="2" TextColor="White" BackgroundColor="#446a81" ></Button>
+          <Button  Text="Save" TextColor="White" BackgroundColor="#41af4b" Grid.Row="0" Grid.Column="3"   ></Button>
+          
+        </Grid>
+        
+      
+    
+   
+   
+    
+      </Frame>
+   </StackLayout>
+    
+  <ScrollView>  
+    <StackLayout  Orientation="Vertical"  Padding="5" Spacing="5" >
+         <AbsoluteLayout>
+          <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                     AbsoluteLayout.LayoutFlags="All"> 
+      
+      
+    <StackLayout  Orientation="Vertical"  Padding="5" >
+      
+       <Frame HasShadow="True"  CornerRadius="5"    Margin="10,0,10,10"    BackgroundColor="#FEF0E3" HorizontalOptions="FillAndExpand">
+        <Grid BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" >
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+         <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+         <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           
+          </Grid.ColumnDefinitions>
+           <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+          </Grid.RowDefinitions>
+          
+        <local:LabelRender Text="{Binding Resources[ProductDescription]}"   Margin="0,0,-6,0"    Grid.Row="0" Grid.Column="0"   Grid.ColumnSpan="2" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  />
+                <local:BoxBorderEntry Placeholder="{Binding Resources[ProductDescription]}"   Grid.Row="0" Grid.Column="2"   Grid.ColumnSpan="8"   FontAttributes="Bold,Italic" VerticalOptions="Center" FontSize="20" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>             
+              
+          
+     <local:LabelRender Text="SKU Code"   Margin="0,0,-6,0"   Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"/>
+   <local:BoxBorderEntry  Placeholder="Enter SKU Code"  FontSize="16" Grid.Row="1" Grid.Column="2"   Grid.ColumnSpan="2" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
+   <local:LabelRender Text="{Binding Resources[BillDescription]}"   Margin="0,0,-6,0" Grid.Row="1" Grid.Column="4"   Grid.ColumnSpan="2"  TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  />
+   <local:BoxBorderEntry  Placeholder="{Binding Resources[BillDescription]}"   FontSize="16" Grid.Row="1" Grid.Column="6"   Grid.ColumnSpan="4" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
+         
+          
+        </Grid>
+         </Frame>
+       </StackLayout>
+      
+      
+        
+          <StackLayout    Padding="5" Spacing="5" >
+      <Frame HasShadow="True"  CornerRadius="5"  Padding="5"  Margin="10,0,10,10"   BackgroundColor="#FEF0E3" HorizontalOptions="FillAndExpand">
+        <Grid BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" >
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+             <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+       
+         </Grid.ColumnDefinitions>
+           <Grid.RowDefinitions>
+            <RowDefinition Height="225" />
+          
+          </Grid.RowDefinitions>
+          
+         <StackLayout Orientation="Horizontal"  Padding="5" Grid.Row="0" Grid.Column="0"   Grid.ColumnSpan="4"  HorizontalOptions="FillAndExpand"  >
+       
+            <Grid BackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" >
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+       </Grid.ColumnDefinitions>
+           <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+              <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+              <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+             <RowDefinition Height="Auto" />
+           </Grid.RowDefinitions>
+              
+               <Label  x:Name="lblproductlvl" Text="Product Levels" FontSize="12"  Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="10"  VerticalTextAlignment="Center"   FontFamily="Bold" TextColor="#96001D"></Label>
+
+                
+                      <local:BoxBorderEntry   x:Name="enryproductlvl" Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="9" HorizontalOptions="FillAndExpand"  FontSize="16"  Keyboard="Numeric" Placeholder="Product Levels"    TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
+                      <Image   x:Name="imgproductlvl" Aspect="AspectFit"  Source="AdditionIcon.png"  Grid.Row="1" Grid.Column="9"  VerticalOptions="Center"  > <Image.GestureRecognizers>
+            <TapGestureRecognizer  Tapped="hgclick" /> </Image.GestureRecognizers>  </Image>
+
+    
+                   
+
+          
+        
+        <Picker x:Name="BrandPicker"  Grid.Row="3" Grid.Column="0"  Grid.ColumnSpan="10"   HorizontalOptions="FillAndExpand"  TextColor="#000000"   Title="Choose Brand"
+                            BackgroundColor="White"   >
+                        <Picker.Items TextColor="#787878">
+                          <x:String >Brand</x:String>
+                        </Picker.Items>
+                      </Picker>
+              
+                         <local:LabelRender Text="UOM"   Margin="0,0,-6,0"  Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"  TextColor="White"    HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"    FontSize="14" />
+                    <local:BoxBorderEntry  x:Name="entryUom"  Placeholder="Enter UOM"    Grid.Row="5" Grid.Column="2"   Grid.ColumnSpan="3"  FontSize="16" TextColor="#787878" PlaceholderColor="#FFED9EA6"/> 
+                 
+                   <local:LabelRender Text="Tax"   Margin="0,0,-6,0"   TextColor="White"    Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="2" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  FontSize="14" />
+                    <local:BoxBorderEntry  x:Name="entryTax"   Placeholder="0.00"  FontSize="16"  Grid.Row="5" Grid.Column="7" Grid.ColumnSpan="3"  TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
+              
+              
+                 
+                   
+                 
+                 
+                    <local:LabelRender Text="Vendor"  Grid.Row="4" Grid.Column="0"  Grid.ColumnSpan="4"  Margin="0,0,-6,0" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"   />
+                     <local:BoxBorderEntry  Placeholder="Enter Vendor" FontSize="16" Grid.Row="4" Grid.Column="4"  Grid.ColumnSpan="6"    TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
+                  
+               
+                 
+            
+               </Grid>    
+      
+          
+            
+       </StackLayout>
+          
+          
+          
+          
+       <StackLayout Orientation="Horizontal"  Padding="5"  Grid.Row="0" Grid.Column="4"  Grid.ColumnSpan="3" HorizontalOptions="FillAndExpand"   >
+      
+            <Grid BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" >
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+       </Grid.ColumnDefinitions>
+           <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+           <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+           </Grid.RowDefinitions>
+              
+              
+            
+               
+                    <Label   Text="Open Rate" FontSize="16" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="8" VerticalTextAlignment="Center"  FontFamily="Bold" TextColor="#000000"></Label>
+                    <Switch  VerticalOptions="Center"  Grid.Row="0" Grid.Column="8"  Grid.ColumnSpan="2" />
+              
+                    <Label   Text="Allow Only Scan" FontSize="16"  Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="8" VerticalTextAlignment="Center" FontFamily="Bold" TextColor="#000000"></Label>
+                    <Switch  VerticalOptions="Center" Grid.Row="1" Grid.Column="8"  Grid.ColumnSpan="2" />
+              
+                    <Label   Text="Allow Only Decimal" FontSize="16"   Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="8" VerticalTextAlignment="Center"  FontFamily="Bold" TextColor="#000000"></Label>
+                      <Switch  VerticalOptions="Center"  Grid.Row="2" Grid.Column="8"  Grid.ColumnSpan="2" /> 
+               
+                     
+                    <Label   Text="Maintain Inventory" FontSize="16"  Grid.Row="3" Grid.Column="0"  Grid.ColumnSpan="8"  VerticalTextAlignment="Center" FontFamily="Bold" TextColor="#000000"></Label>
+                    <Switch VerticalOptions="Center" Grid.Row="3" Grid.Column="8"  Grid.ColumnSpan="2" />
+
+                    <Label   Text="In Active" FontSize="16"  Grid.Row="4" Grid.Column="0"  Grid.ColumnSpan="8"  VerticalTextAlignment="Center"  FontFamily="Bold" TextColor="#000000"></Label>
+                    <Switch  VerticalOptions="Center"  Grid.Row="4" Grid.Column="8"  Grid.ColumnSpan="2"  />
+               
+             
+       
+          
+          
+            </Grid>
+          
+      </StackLayout>
+      
+        <StackLayout Orientation="Horizontal" Padding="5" Grid.Row="0" Grid.Column="7"   Grid.ColumnSpan="3" HorizontalOptions="FillAndExpand" >
+         <Grid BackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" >
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+       </Grid.ColumnDefinitions>
+           <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+         
+           </Grid.RowDefinitions>
+           
+             <Image Source="CamaraIcon.png"   Grid.Row="0" Grid.Column="0"   Grid.ColumnSpan="10" Aspect="AspectFit"     />
+         
+           
+          
+          </Grid>
+      </StackLayout>
+      
+      </Grid>
+          </Frame>
+       </StackLayout>
+      
+        
+      
+      
+      
+      <StackLayout    Padding="5" Spacing="5">
+      <Frame HasShadow="True"  CornerRadius="5"   Margin="10,0,10,10"   BackgroundColor="#FEF0E3" HorizontalOptions="FillAndExpand">
+        <Grid BackgroundColor="Transparent"  HorizontalOptions="FillAndExpand">
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+             <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+       
+         </Grid.ColumnDefinitions>
+           <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+          
+          </Grid.RowDefinitions>
+          
+          
+      <StackLayout Orientation="Horizontal"   Grid.Row="0" Grid.Column="0"   Grid.ColumnSpan="6"  HorizontalOptions="FillAndExpand"  >
+       
+            <Grid BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" >
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+       </Grid.ColumnDefinitions>
+           <Grid.RowDefinitions>
+               <RowDefinition Height="50" />
+           </Grid.RowDefinitions>
+              
+               <local:LabelRender  Text="Cost Price"  Margin="0,0,-6,0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  FontSize="14"  FontFamily="Bold" TextColor="White"/>
+
+                
+                      <local:BoxBorderEntry   Grid.Row="0" Grid.Column="2"  Grid.ColumnSpan="2"  FontSize="16"  Keyboard="Text" Placeholder="0.00"    TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
+             
+              
+                         <local:LabelRender  x:Name="labelMark"    Text="MarkUp"   Margin="0,0,-8,0"  Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2"  TextColor="White"    HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"    FontSize="14" />
+                    <local:BoxBorderEntry  x:Name="entryMark" Placeholder="Enter MarkUp"    Grid.Row="0" Grid.Column="6"   Grid.ColumnSpan="3"  FontSize="16" TextColor="White" PlaceholderColor="#FFED9EA6"/> 
+                 
+                   <local:LabelRender Text="Discount On MRP "     TextColor="White"    Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="2" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  FontSize="14" />
+                    <Image Aspect="AspectFit"  Source="plustw.png"  Grid.Row="0" Grid.Column="11"  VerticalOptions="Center"  >
+                       
+                      </Image>
+                    </Grid>    
+        </StackLayout>    
+          <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="6"   Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" >
+         <Grid BackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" >
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+           <ColumnDefinition Width="*" />
+       </Grid.ColumnDefinitions>
+           <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+         
+           </Grid.RowDefinitions>
+           
+             <local:LabelRender   Margin="0,0,-6,0"  Text="QOH"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  FontSize="14"    FontFamily="Bold" TextColor="White"/>
+
+                
+                      <local:BoxBorderEntry   Grid.Row="0" Grid.Column="2"  Grid.ColumnSpan="2"  FontSize="16"  Keyboard="Text" Placeholder="0.00"    TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
+              <Image Aspect="AspectFit"  Source="plusminustw.png"  Grid.Row="0" Grid.Column="4"  VerticalOptions="Center"  >
+                       
+                      </Image>
+              
+                         <local:LabelRender Text="MBQ"   Margin="0,0,-6,0"  Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="2"  TextColor="White"    HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"    FontSize="14" />
+                    <local:BoxBorderEntry   Placeholder="0.000"    Grid.Row="0" Grid.Column="7"   Grid.ColumnSpan="3"  FontSize="16" TextColor="White" PlaceholderColor="#FFED9EA6"/> 
+                 
+                 </Grid>
+      </StackLayout>
+          
+         </Grid>
+          </Frame>
+       </StackLayout>
+  
+     <StackLayout   Orientation="Vertical" >
+      <Frame HasShadow="True"  CornerRadius="5"  Margin="10,0,10,10"    BackgroundColor="#FEF0E3" HorizontalOptions="FillAndExpand">
+        <Grid BackgroundColor="Transparent"  HorizontalOptions="FillAndExpand">
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+      
+        
+       
+          </Grid.ColumnDefinitions>
+           <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+          </Grid.RowDefinitions>
+        
+               <local:LabelRender Text="EAN "   Margin="0,0,-6,0"    Grid.Row="0" Grid.Column="0"   Grid.ColumnSpan="2" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  />
+                <local:BoxBorderEntry Placeholder="Enter EAN"   Grid.Row="0" Grid.Column="2"   Grid.ColumnSpan="7"  FontSize="16" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>             
+         
+            <Image Aspect="AspectFill" Margin="10" Source="plustw.png" VerticalOptions="Center" HorizontalOptions="End" Grid.Row="0" Grid.Column="9">
+        
+
+          </Image>
+        
+        </Grid>
+        </Frame>
+   </StackLayout>
+            
+          
+           
+           
+           
+       <StackLayout   Orientation="Vertical" >
+      <Frame HasShadow="True"  CornerRadius="5"  Margin="10,0,10,10"    BackgroundColor="#FEF0E3" HorizontalOptions="FillAndExpand">
+        <Grid BackgroundColor="Transparent"  HorizontalOptions="FillAndExpand">
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+      
+        
+       
+          </Grid.ColumnDefinitions>
+           <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+          </Grid.RowDefinitions>
+        
+               <local:LabelRender Text="HSN Code "   Margin="0,0,-6,0"    Grid.Row="0" Grid.Column="0"   Grid.ColumnSpan="2" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  />
+                <local:BoxBorderEntry Placeholder="Enter HSN Code"   Grid.Row="0" Grid.Column="2"   Grid.ColumnSpan="8"  FontSize="16" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>             
+         
+          
+        </Grid>
+        </Frame>
+   </StackLayout>     
+          
+     </StackLayout>
+           
+           
+           
+ <!-- Heirachy Group  list Start-->
+
+          <Frame  x:Name="HgCv" Padding="0"   HasShadow="True"  CornerRadius="5"  AbsoluteLayout.LayoutBounds="0.02, 0.50, 0.5, 0.3" IsVisible="false"
+             AbsoluteLayout.LayoutFlags="All"  HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand"  HeightRequest="150" BackgroundColor="#FEF0E3">
+
+          
+                  
+                     
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" >
+                           <SearchBar x:Name="searchhg" Placeholder="Search here"   WidthRequest="100" HorizontalOptions="FillAndExpand" PlaceholderColor="#C8C8C8"  TextColor="Gray"   CancelButtonColor="Gray" ></SearchBar>
+                            <StackLayout HeightRequest="100">
+                            <ListView x:Name="DeptList"
+                                    RowHeight="25"
+                                 HasUnevenRows="True" >
+                            <ListView.ItemTemplate>
+                              <DataTemplate>
+                                <ViewCell>
+
+                                  <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                    <Label Text="{Binding Dept}"  WidthRequest="100" TextColor="Black" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  HorizontalOptions="Start"  FontSize="16" ></Label>
+                                    </StackLayout>
+                                </ViewCell>
+                              </DataTemplate>
+                            </ListView.ItemTemplate>
+                          </ListView>
+                           </StackLayout>
+                          
+                          <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
+                            <Button Text="Add New "  WidthRequest="100" TextColor="Black"   FontSize="16" Clicked="hgpopd" ></Button>
+                          </StackLayout>
+                        
+                        </StackLayout>
+                      
+                       
+            
+          </Frame>
+
+
+          <!-- Heirachy Group list End -->        
+          
+           
+           
+           <!-- Heirachy Group  popup Start-->
+           
+           <Frame  x:Name="Hgpop" Padding="0" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"  IsVisible="false"
+             AbsoluteLayout.LayoutFlags="All"    HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand"   BackgroundColor="#C0808080"   >
+
+            <Frame Padding="0" HorizontalOptions="FillAndExpand"  BackgroundColor="#FEF0E3"  VerticalOptions="Center"  Margin="150"    WidthRequest="150"  HeightRequest="360"  >
+             
+                  <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  VerticalOptions="Center"   Padding="10" >
+
+                    <StackLayout x:Name="HgSlpop" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                      
+                      <StackLayout x:Name="DeptSl" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                      <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
+                        <Label   Text="Department" VerticalTextAlignment="Center"     HorizontalOptions="Fill"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+                        <local:BoxBorderEntry  Placeholder="Enter Department"   Margin="5,0,0,0"  WidthRequest="100" Keyboard="Numeric"  HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+                        <Image Aspect="AspectFit"  Source="AdditionIcon.png"   VerticalOptions="Center" HorizontalOptions="End"   ></Image>
+                      </StackLayout>
+                        
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand"  >
+                         <StackLayout Orientation="Vertical"  HeightRequest="100">
+                           <ListView 
+                                     RowHeight="40"
+                                 HasUnevenRows="True" >
+                            <ListView.ItemTemplate>
+                              <DataTemplate>
+                                <ViewCell>
+
+                                  <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                    <Label Text="{Binding Dept}"  WidthRequest="100" TextColor="Black" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  HorizontalOptions="Start"  FontSize="16" ></Label>
+                                    </StackLayout>
+                                </ViewCell>
+                              </DataTemplate>
+                            </ListView.ItemTemplate>
+                          </ListView>
+                             </StackLayout>
+                          <StackLayout Orientation="Horizontal" HorizontalOptions="Start"  >
+                           <Button Text="Add New "  WidthRequest="100" TextColor="Black"  FontSize="16" ></Button>
+                          </StackLayout>
+                        </StackLayout>
+                        
+                      </StackLayout>
+                      
+                      
+                      
+                      <StackLayout  x:Name="CatgSl" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
+                        <Label  Text="Category" VerticalTextAlignment="Center"   HorizontalOptions="Fill"      HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+                        <local:BoxBorderEntry  Placeholder="Enter Catgeory"  Margin="5,0,0,0"  WidthRequest="100"  Keyboard="Numeric"  HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+                        <Image Aspect="AspectFit"  Source="AdditionIcon.png"   VerticalOptions="Center" HorizontalOptions="End"></Image>
+                      </StackLayout>
+                        <StackLayout HorizontalOptions="FillAndExpand"  >
+                           <StackLayout Orientation="Vertical"  HeightRequest="100">
+                          <ListView x:Name="CatgList" RowHeight="40"
+                                 HasUnevenRows="True" >
+                            <ListView.ItemTemplate>
+                              <DataTemplate>
+                                <ViewCell>
+
+                                  <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                    <Label Text="{Binding category}"  WidthRequest="100" TextColor="Black" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  HorizontalOptions="Start"  FontSize="16" ></Label>
+                                  </StackLayout>
+                                </ViewCell>
+                              </DataTemplate>
+                            </ListView.ItemTemplate>
+                          </ListView>
+                                    </StackLayout>
+                          <StackLayout Orientation="Horizontal" HorizontalOptions="Start"  >
+                           <Button Text="Add New "  WidthRequest="100" TextColor="Black"   HorizontalOptions="Start"  FontSize="16" ></Button>
+                          </StackLayout>
+                        </StackLayout>
+                      </StackLayout>
+
+                     
+
+                      <StackLayout Orientation="Horizontal" HorizontalOptions="End"  >
+                        <Button  Text="Cancel"  WidthRequest="100" HeightRequest="40"  HorizontalOptions="End"    TextColor="White" BackgroundColor="#446a81" ></Button>
+                        <Button  Text="Save"   WidthRequest="100"  HeightRequest="40"  HorizontalOptions="End" TextColor="White" BackgroundColor="#41af4b" Clicked="btnhgsave" ></Button>
+                      </StackLayout>
+                    </StackLayout>
+                  </StackLayout>
+                </Frame>
+          </Frame>
+           
+           
+            <!-- Heirachy Group Popup End -->      
+           
+           
+           
+      
+           
+           
+          
+           
+           
+           
+           
+          
+          
+         
+    
+  
+ 
+
+
+
+    
+        </AbsoluteLayout>
+      </StackLayout>
+   </ScrollView>
+    </StackLayout>
+</ContentPage>

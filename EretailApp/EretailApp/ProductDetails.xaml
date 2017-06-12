@@ -28,8 +28,9 @@
 
   <StackLayout  Orientation="Vertical"  VerticalOptions="FillAndExpand"  BackgroundColor="#FFFFFF" HorizontalOptions="FillAndExpand"   Padding="3"  Margin="3"  >
 
-   <StackLayout >
-      <Grid  BackgroundColor="#FE7C08" Padding="5">
+    <StackLayout   Orientation="Vertical"  Padding="5" Spacing="5">
+     <Frame HasShadow="True"  CornerRadius="5"     BackgroundColor="#FEF0E3" HorizontalOptions="FillAndExpand">
+      <Grid  BackgroundColor="Transparent" >
         <Grid.ColumnDefinitions >
           <ColumnDefinition Width="*" />
           <ColumnDefinition Width="*" />
@@ -56,10 +57,11 @@
 
         </Image>
         -->
-        <Label  Text="Product"  VerticalTextAlignment="Center"     Grid.Row="0" Grid.Column="1"   HorizontalOptions="Start"    FontSize="20"  FontFamily="Bold" TextColor="White"></Label>
+        <Label  Text="Product"  VerticalTextAlignment="Center"     Grid.Row="0" Grid.Column="1"   HorizontalOptions="Start"    FontSize="20"  FontFamily="Bold" TextColor="Black"></Label>
         <Button  x:Name="btnImport"   Text="Import"   TextColor="White" BackgroundColor="#446a81" Grid.Row="0" Grid.Column="2" ></Button>
         <Button x:Name="btnAddProduct" Text="Create"   TextColor="White" BackgroundColor="#41af4b" Grid.Row="0" Grid.Column="3"  Clicked="AddProduct"></Button>
       </Grid>
+     </Frame>
     </StackLayout>
 
 
@@ -77,9 +79,9 @@
 </StackLayout>
 -->
     
-    <ContentView Padding="0" HorizontalOptions="FillAndExpand" Margin="0,0,0,10" >
-      <ContentView Style="{StaticResource BorderStyle}" >
-        <ContentView Style="{StaticResource InternalViewStyle}">
+  
+          <Frame HasShadow="True"  CornerRadius="5"     BackgroundColor="#FEF0E3" HorizontalOptions="FillAndExpand">
+          
           <StackLayout Orientation="Vertical" >
             
         <StackLayout Orientation="Horizontal"  Padding="5" Spacing="5">
@@ -90,15 +92,14 @@
 
       </StackLayout>
 
-
-      <StackLayout HorizontalOptions="FillAndExpand" >
-        <Picker x:Name="Mainpicker"  TextColor="#000000"  Title=" category"
-                HorizontalOptions="FillAndExpand"   BackgroundColor="White"  SelectedIndexChanged="onselecteditem"  />
+    <StackLayout HorizontalOptions="FillAndExpand" >
+        <Picker x:Name="Deptpicker"  TextColor="#000000"   Title="Department" HorizontalOptions="Center"  SelectedIndexChanged="Deptonselecteditem"  />
       </StackLayout>
 
-      <StackLayout HorizontalOptions="FillAndExpand" >
-        <Picker x:Name="Deptpicker"  TextColor="#000000"   BackgroundColor="White" Title="Department" HorizontalOptions="Center"  SelectedIndexChanged="Deptonselecteditem"  />
-      </StackLayout>
+          <StackLayout HorizontalOptions="FillAndExpand" >
+            <Picker x:Name="Catgpicker"  TextColor="#000000"  Title=" category"
+                    HorizontalOptions="FillAndExpand" ItemsSource="{Binding catgList}"   SelectedIndexChanged="onselecteditem"  />
+          </StackLayout>
     </StackLayout>
     
     <StackLayout HorizontalOptions="FillAndExpand"  Padding="5" Spacing="5" >
@@ -108,12 +109,12 @@
           <DataTemplate>
             <ViewCell>
 
-              <StackLayout Orientation="Horizontal" BackgroundColor="White">
+              <StackLayout Orientation="Horizontal">
                 <Label Text="{Binding name}"  WidthRequest="100" TextColor="Black" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  HorizontalOptions="Start"  FontSize="16" ></Label>
                 <Image Source="{Binding Icon}" HeightRequest="35" WidthRequest="50"  HorizontalOptions="Start">
                 </Image>
-                <Label Text="{Binding category}"  WidthRequest="100"  TextColor="Black" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"  FontSize="16" ></Label>
-                <Label Text="{Binding Dept}"  WidthRequest="100"  TextColor="Black" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  HorizontalOptions="FillAndExpand" FontSize="16" ></Label>
+                <Label Text="{Binding Dept}"  WidthRequest="100"  TextColor="Black" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"  FontSize="16" ></Label>
+                <Label Text="{Binding category}"  WidthRequest="100"  TextColor="Black" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  HorizontalOptions="FillAndExpand" FontSize="16" ></Label>
               </StackLayout>
             </ViewCell>
           </DataTemplate>
@@ -121,9 +122,8 @@
       </ListView>
     </StackLayout>
           </StackLayout>
-        </ContentView>
-      </ContentView>
-    </ContentView>
+          </Frame>
+   
     
   </StackLayout>
   

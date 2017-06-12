@@ -1,4 +1,5 @@
 ﻿using EretailApp.Menuitem;
+using EretailApp.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,9 +23,9 @@ namespace EretailApp.Views
 
         public Sidemenu()
         {
-
+            BindingContext = new SettingsViewModel();
             InitializeComponent();
-
+          
             menuList = new List<MasterPageItem>();
 
             // Creating our pages for menu navigation

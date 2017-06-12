@@ -26,12 +26,12 @@
 
       <Style x:Key="ButtonStyle" TargetType="Button">
         <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
-        <Setter Property="BackgroundColor" Value="#41af4b"/>
-        <Setter Property="BorderColor" Value="Blue"/>
+        <Setter Property="BackgroundColor" Value="#C0808080"/>
+        <Setter Property="BorderColor" Value="#787878"/>
         <Setter Property="HeightRequest" Value="42"/>
         <Setter Property="BorderRadius" Value="5"/>
         <Setter Property="BorderWidth" Value="0" />
-        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="TextColor" Value="Black"/>
       </Style>
 
 
@@ -79,7 +79,9 @@
     <ScrollView>
       <StackLayout  Orientation="Vertical"  Padding="5" Spacing="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
 
-
+        <AbsoluteLayout>
+          <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                     AbsoluteLayout.LayoutFlags="All">
 
         <!-- <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#FE7C08" >
      <Image
@@ -187,40 +189,23 @@
                 <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
                 <local:BoxBorderEntry  Placeholder="Enter MarkUp / Down"   WidthRequest="60"   HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
                 <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
-                <StackLayout Orientation="Vertical" >
-                <local:BoxBorderEntry x:Name="entrySP"  Placeholder="Enter Sales Price"   WidthRequest="60"   HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
-                  <StackLayout x:Name="SpSl" Orientation="Vertical" >
-                  <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
-                   <Label  Text="Take Away" VerticalTextAlignment="Center"     HorizontalOptions="Start"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
-                    <local:BoxBorderEntry  Placeholder="Enter Price"   Keyboard="Numeric"  HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
-                   </StackLayout>
-                    
-                  <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
-                 <Label  Text="Dine In" VerticalTextAlignment="Center"   HorizontalOptions="Start"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
-                    <local:BoxBorderEntry  Placeholder="Enter Price"   Keyboard="Numeric"  HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
-                  </StackLayout>
-                    
-                  <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
-                   <Label  Text="Delivery" VerticalTextAlignment="Center"     HorizontalOptions="Start"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
-                    <local:BoxBorderEntry  Placeholder="Enter Price"  Keyboard="Numeric"   HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
-                  </StackLayout>
-
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
-                      <Button  Text="Cancel"  WidthRequest="100"   HorizontalOptions="End"    TextColor="White" BackgroundColor="#446a81"></Button>
-                      <Button  Text="Save"   WidthRequest="100"   HorizontalOptions="End" TextColor="White" BackgroundColor="#41af4b" ></Button>
-                    </StackLayout>
-
-                  </StackLayout>
-                  
-                </StackLayout>
+                <Button x:Name="SalesSp"  Text="Sales Price" Style="{StaticResource ButtonStyle}"    WidthRequest="40" HeightRequest="30"  HorizontalOptions="FillAndExpand"   FontSize="16"  FontFamily="Bold" Clicked="SP" ></Button>
                 <local:BoxBorderEntry  Placeholder="Enter MRP"   WidthRequest="60"   HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
                 <Image Aspect="AspectFill" Source="Star.png" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
+           
               </StackLayout>
-
             </ContentView>
           </ContentView>
         </ContentView>
+         
 
+
+
+
+
+      
+          
+          
         <ContentView Padding="0" HorizontalOptions="FillAndExpand" Margin="0,0,0,10" >
           <ContentView Style="{StaticResource BorderStyle}" >
             <ContentView Style="{StaticResource InternalViewStyle}">
@@ -260,7 +245,56 @@
             </ContentView>
           </ContentView>
         </ContentView>
+          </StackLayout>
 
+
+          <!-- Sales Price Popup Start-->
+
+          <ContentView  x:Name="SpCv" Padding="0" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"  IsVisible="false"
+             AbsoluteLayout.LayoutFlags="All"    HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand"   BackgroundColor="#C0808080"   >
+
+            <ContentView Padding="0" HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  Margin="200"   WidthRequest="150"  HeightRequest="300"  >
+              <ContentView Style="{StaticResource BorderStyle}" >
+                <ContentView Style="{StaticResource InternalViewStyle}">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  VerticalOptions="Center"   Padding="0" >
+
+                  <StackLayout x:Name="SpSl" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
+                      <Label  Text="Take Away" VerticalTextAlignment="Center"     HorizontalOptions="Fill"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+                      <local:BoxBorderEntry  Placeholder="Enter Price"   Margin="5,0,0,0"  WidthRequest="100" Keyboard="Numeric"  HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
+                      <Label  Text="Dine In" VerticalTextAlignment="Center"   HorizontalOptions="Fill"      HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+                      <local:BoxBorderEntry  Placeholder="Enter Price"  Margin="5,0,0,0"  WidthRequest="100"  Keyboard="Numeric"  HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  >
+                      <Label  Text="Delivery" VerticalTextAlignment="Center"     HorizontalOptions="Fill"   HorizontalTextAlignment="Center"    FontSize="16"  FontFamily="Bold" TextColor="Black"></Label>
+                      <local:BoxBorderEntry  Placeholder="Enter Price"  Margin="5,0,0,0"  WidthRequest="100"   Keyboard="Numeric"   HorizontalOptions="FillAndExpand" TextColor="#787878" PlaceholderColor="#969696"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="End"  >
+                      <Button  Text="Cancel"  WidthRequest="100" HeightRequest="40"  HorizontalOptions="End"    TextColor="White" BackgroundColor="#446a81" Clicked="CancelSp"></Button>
+                      <Button  Text="Save"   WidthRequest="100"  HeightRequest="40"  HorizontalOptions="End" TextColor="White" BackgroundColor="#41af4b" Clicked="SaveSp"></Button>
+                    </StackLayout>
+                  </StackLayout>
+                </StackLayout>
+                </ContentView>
+              </ContentView>
+            </ContentView>
+          </ContentView>
+
+
+          <!-- Sales Price Popup Start End -->
+          
+          
+          
+          
+          
+          
+          
+        </AbsoluteLayout>
       </StackLayout>
 
     </ScrollView>

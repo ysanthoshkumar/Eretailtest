@@ -9,6 +9,8 @@ namespace EretailApp
 {
     public partial class App : Application
     {
+        public static string CurrentLanguage { get; internal set; }
+
         public App()
         {
             InitializeComponent();

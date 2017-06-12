@@ -10,10 +10,10 @@ namespace EretailApp
 {
     public partial class ProductDetails : ContentPage
     {
-
        
 
-            List<ProductModel> ll = new List<ProductModel>
+
+        List<ProductModel> ll = new List<ProductModel>
         {
               new ProductModel
            {
@@ -64,17 +64,28 @@ namespace EretailApp
 
         };
 
-            public ProductDetails()
+ 
+
+
+
+
+        public ProductDetails()
         {
             InitializeComponent();
 
             mylistvi.ItemsSource = ll;
-
-            Mainpicker.Items.Add("Mens");
-            Mainpicker.Items.Add("Womens");
-            Mainpicker.Items.Add("Kids");
+            var catgList = new List<String>();
 
 
+            catgList.Add("Mens");
+            catgList.Add("Womens");
+            catgList.Add("Kids");
+
+            Catgpicker.ItemsSource = catgList;
+
+
+
+            //Mainpicker.SetBinding(Picker.ItemsSourceProperty, "category");
             Deptpicker.Items.Add("PepiJeans");
             Deptpicker.Items.Add("Lives");
             Deptpicker.Items.Add("Us Polo");
@@ -86,7 +97,7 @@ namespace EretailApp
         private void onselecteditem(Object sender, EventArgs e)
         {
 
-            var name = Mainpicker.Items[Mainpicker.SelectedIndex];
+            var name = Catgpicker.Items[Catgpicker.SelectedIndex];
           //  DisplayAlert(name, "SelectedItem", "Okay");
             if (!name.Equals("") || !searchvalue.Text.Equals(""))
             {
@@ -122,7 +133,9 @@ namespace EretailApp
         {
 
             String str = searchvalue.Text;
-            IEnumerable<ProductModel> searchresult = ll.Where(name1 => name1.name.Contains(str));
+            String dpt = Deptpicker.Items[Deptpicker.SelectedIndex];
+            String catg= Catgpicker.Items[Catgpicker.SelectedIndex];
+            IEnumerable<ProductModel> searchresult = ll.Where(name1 => name1.name.Contains(str)||name1.Dept.Contains(dpt) ||name1.category.Contains(catg));
             mylistvi.ItemsSource = searchresult;
 
             //if (str.Equals(""))
@@ -139,12 +152,10 @@ namespace EretailApp
 
         public void AddProduct(Object o, EventArgs e)
         {
-            Navigation.PushModalAsync(new ProductConfig());
+          
+            Navigation.PushModalAsync(new DummyproductForm());
         }
-        //public void AddProductTwo(Object o, EventArgs e)
-        //{
-        //    Navigation.PushModalAsync(new ProductConfig());
-        //}
+      
     }
 
 }

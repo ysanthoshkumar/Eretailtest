@@ -4,8 +4,7 @@
              xmlns:local="clr-namespace:MSCommunity_Xamarin"
              x:Class="EretailApp.MainPage"
                   x:Name="masterpl"
-                  IsVisible="True"
-                  >
+                  IsVisible="True" >
 
     <MasterDetailPage.Master>
         <ContentPage Title="Menu"
@@ -94,6 +93,8 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
+              
+              
                 <ListView x:Name="navigationDrawerList1"
                   RowHeight="45"
                   BackgroundColor="#e8e8e8"
@@ -126,6 +127,7 @@
                     </ListView.ItemTemplate>
 
                 </ListView>
+              
 
             </StackLayout>
 

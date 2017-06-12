@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EretailApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,7 @@ namespace EretailApp
         }
         public void HomePage(Object o, EventArgs e)
         {
+            BindingContext = new SettingsViewModel();
             Navigation.PushModalAsync(new MainPage());
         }
     }

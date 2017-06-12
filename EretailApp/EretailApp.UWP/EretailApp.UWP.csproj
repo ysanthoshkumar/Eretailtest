@@ -96,11 +96,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BorderLabelRender.cs" />
     <Compile Include="BoxBorderEntryRenderer.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="mandatoryEntryRender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegulerLabel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -145,6 +148,12 @@
     <Content Include="logo.png" />
     <Content Include="logout.png" />
     <Content Include="minusIcon.png" />
+    <Content Include="plusminussixten.png" />
+    <Content Include="plusminustf.png" />
+    <Content Include="plusminustw.png" />
+    <Content Include="plussixten.png" />
+    <Content Include="plustf.png" />
+    <Content Include="plustw.png" />
     <Content Include="prod.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />

@@ -39,8 +39,7 @@ namespace EretailApp.Views
 
            }
              ,
-};
-      //  private int buttonclick;
+}; //  private int buttonclick;
 
         public CombiMaster()
         {
@@ -50,9 +49,7 @@ namespace EretailApp.Views
 
         }
 
-      //public   class click
-
-      // {  public static int buttonclick = 1;}
+     
 
 
     public void SearchCombiclick(Object o, EventArgs e)
@@ -68,73 +65,51 @@ namespace EretailApp.Views
 
 
 
-        async void  popup(object sender, ToggledEventArgs e)
+     public   void  popup(object sender, ToggledEventArgs e)
         {
             //switc.Text = "Switch is" + e.Value.ToString();
             if (e.Value.ToString().Equals("True"))
             {
-                //  var page = new MyPopupPage();
+            
 
-                //Navigation.PushModalAsync(page);
-
-                var Det = new DisplayAlert();
-
-                await Navigation.PushModalAsync(new DisplayAlert());
-
-                // CombiCV.IsVisible = true;
+              CombiCV.IsVisible = true;
+              
 
             }
             else
             {
-               // CombiCV.IsVisible = false;
+           CombiCV.IsVisible = false;
             }
         }
 
-        public async void AddIconCombiItemclicked(Object o, EventArgs e)
+        public void CancelCombi(Object o, EventArgs e)
         {
-            // click.buttonclick++;
+            CombiCV.IsVisible = false;
+            popupToggle.IsToggled = false;
+}
+        public void SaveCombi(Object o, EventArgs e)
+        {
+            CombiCV.IsVisible = false;
+            popupToggle.IsToggled = false;
 
-            var action = await DisplayActionSheet("ActionSheet: SavePhoto?", "Cancel", "Delete", "Photo Roll", "Email");
+        }
 
-            Debug.WriteLine("Action: " + action);
-
-
-
-
-         //   CombiListSL.IsVisible = true;
+        public  void AddIconCombiItemclicked(Object o, EventArgs e)
+        {
+          CombiListSL.IsVisible = true;
             ll.Clear();
-            //SCombiCode = entryCombiCode.Text;
-            //SCombiName = entryCombiName.Text;
-            //SCombiQty = entryCombiQty.Text;
-            //SCombiPrice = entryCombiPrice.Text;
-
-          //  for (total= -20; total <= buttonclick; total++)
-       //   if(buttonclick>0)
-                
-            { 
-
+          {
                 ll.Add(new ProductModel
                 {
                     CombiCode = entryCombiCode.Text,
                     CombiName = entryCombiName.Text,
                     CombiQty = entryCombiQty.Text,
-                   // CombiPrice = entryCombiPrice.Text,
-
                 });
 
             }
-
-
-         
-
-            CombList.ItemsSource = ll;
+        CombList.ItemsSource = ll;
 
 
         }
-
-
-
-
-
-        }
+ }
 }

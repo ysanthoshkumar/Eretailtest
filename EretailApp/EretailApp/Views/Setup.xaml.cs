@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EretailApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,6 +17,9 @@ namespace EretailApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Setup : ContentPage
     {
+    
+
+        MasterViewModel vm;
         List<ProductModel> lm = new List<ProductModel>();
         List<ProductModel> ll = new List<ProductModel>
         {
@@ -76,7 +80,13 @@ namespace EretailApp.Views
 
         public Setup()
         {
+            this.BindingContext = new MainPageViewModel();
             InitializeComponent();
+
+            BindingContext = vm = new MasterViewModel();
+
+            BindingContext = new SettingsViewModel();
+
             // languages 
             LangPicker.Items.Add("Telugu");
             LangPicker.Items.Add("English");
@@ -88,6 +98,93 @@ namespace EretailApp.Views
             PaymentModePicker.Items.Add("Card");
             PaymentModePicker.Items.Add("Credit");
             PaymentModePicker.Items.Add("Cheque");
+
+        }
+
+
+
+        public void onselecteditem(object o, EventArgs e)
+        {
+
+            var name = picklng.Items[picklng.SelectedIndex];
+           
+
+
+        }
+
+
+
+
+        public void btnSavesettings(Object o, EventArgs e)
+        {
+
+         if (swdept.IsToggled == true)
+            {
+                MasterViewModel.deptvalue = true;
+            }
+            else
+            {
+                MasterViewModel.deptvalue = false;
+            
+            }
+            if (swcatg.IsToggled == true)
+            {
+                MasterViewModel.Catgvalue = true;
+            }
+
+            else
+            {
+                MasterViewModel.Catgvalue = false;
+
+            }
+
+            if (swbrand.IsToggled == true)
+            {
+                MasterViewModel.Brandvalue = true;
+            }
+            else
+            {
+                MasterViewModel.Brandvalue = false;
+
+            }
+            if (swUom.IsToggled == true)
+            {
+                MasterViewModel.UomValue = true;
+            }
+            else
+            {
+                MasterViewModel.UomValue = false;
+
+            }
+            if (swTax.IsToggled == true)
+            {
+                MasterViewModel.TaxValue = true;
+            }
+            else
+            {
+                MasterViewModel.TaxValue = false;
+
+            }
+            if (swdept.IsToggled == false && swcatg.IsToggled==false)
+            {
+                MasterViewModel.Hgvalue = false;
+            }
+            else
+            {
+                MasterViewModel.Hgvalue = true;
+
+            }
+            if (swMarkup.IsToggled == false)
+            {
+                MasterViewModel.MarkUpvalue = false;
+            }
+            else
+            {
+                MasterViewModel.MarkUpvalue = true;
+
+            }
+
+
 
         }
 
@@ -104,6 +201,20 @@ namespace EretailApp.Views
 
             var language = LangPicker.Items[LangPicker.SelectedIndex];
         }
+
+
+        //public void tgdept(Object o, ToggledEventArgs te) {
+        //    if (swdept.IsToggled==true)
+        //    {
+        //        MasterViewModel.deptvalue=true;
+                
+        //    }
+        //    else 
+        //    {
+        //        MasterViewModel.deptvalue=false;
+                
+        //    }
+        //}
 
 
         public void swcard(Object o, ToggledEventArgs e)

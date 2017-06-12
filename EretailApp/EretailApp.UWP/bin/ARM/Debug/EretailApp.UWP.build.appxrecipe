@@ -70,6 +70,9 @@
     <AppxPackagedFile Include="C:\Users\ecpldev\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ecpldev\.nuget\packages\Refractored.MvvmHelpers\1.3.0\lib\netstandard1.0\MvvmHelpers.dll">
+      <PackagePath>MvvmHelpers.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ecpldev\.nuget\packages\Rg.Plugins.Popup\1.0.4\lib\uap10.0\Rg.Plugins.Popup.Platform.dll">
       <PackagePath>Rg.Plugins.Popup.Platform.dll</PackagePath>
     </AppxPackagedFile>

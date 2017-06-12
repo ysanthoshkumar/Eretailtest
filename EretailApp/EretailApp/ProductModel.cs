@@ -52,6 +52,6 @@ namespace EretailApp
         public string CombiName { get; set; }
         public string CombiPrice { get; set; }
         public string CombiQty{ get; set; }
-
+        public string HGroup { get; set; }
     }
 }
