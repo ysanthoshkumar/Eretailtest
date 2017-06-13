@@ -8,17 +8,25 @@ using Xamarin.Forms.Platform.iOS;
 [assembly: ExportRenderer(typeof(LabelRenderer), typeof(BorderLabelRender))]
 namespace EretailApp.iOS
 {
-    class BorderLabelRender : LabelRenderer
+  public  class BorderLabelRender : LabelRenderer
     {
         protected override void OnElementChanged(ElementChangedEventArgs<Label> e)
         {
             base.OnElementChanged(e);
-
+            
             if (Control != null)
             {
-                Control.TextColor = UIColor.DarkGray;
-                Control.Layer.BorderColor = UIColor.LightGray.CGColor;
-                Control.Layer.BorderWidth = 1.0f;
+               
+                {
+                    try
+                    {
+                        Control.TextColor = UIColor.White;
+                       
+                        Control.Layer.BorderColor = UIColor.LightGray.CGColor;
+                        Control.Layer.BorderWidth = 1.0f;
+                    }
+                    catch { }
+                }
             }
         }
     }

@@ -21,8 +21,8 @@ namespace EretailApp.UWP
 
             if (Control != null)
             {
-
-                Control.Foreground = new SolidColorBrush(Colors.DarkGray);
+                
+              
             }
         }
     }

@@ -9,10 +9,10 @@ using Xamarin.Forms;
 
 namespace EretailApp
 {
-    public partial class DummyproductForm : ContentPage
+    public partial class productMasterConfig : ContentPage
     {
         MasterViewModel vm;
-        public DummyproductForm()
+        public productMasterConfig()
         {
             InitializeComponent();
             BindingContext = vm = new MasterViewModel();

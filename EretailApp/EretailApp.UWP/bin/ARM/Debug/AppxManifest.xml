@@ -19,6 +19,9 @@
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
+    <Resource Language="HI" />
+    <Resource Language="TA" />
+    <Resource Language="TE" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="EretailApp.UWP.exe" EntryPoint="EretailApp.UWP.App">

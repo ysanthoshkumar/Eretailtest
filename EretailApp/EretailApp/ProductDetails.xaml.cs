@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EretailApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -152,8 +153,8 @@ namespace EretailApp
 
         public void AddProduct(Object o, EventArgs e)
         {
-          
-            Navigation.PushModalAsync(new DummyproductForm());
+            BindingContext = new SettingsViewModel();
+            Navigation.PushModalAsync(new productMasterConfig());
         }
       
     }

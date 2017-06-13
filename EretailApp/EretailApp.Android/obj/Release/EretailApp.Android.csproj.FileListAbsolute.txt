@@ -145,6 +145,9 @@ E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\bin\Release\Xamarin.F
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\bin\Release\Xamarin.Forms.Xaml.dll.mdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\bin\Release\Xamarin.iOS.xml
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\bin\Release\Xamarin.iOS.dll.mdb
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\bin\Release\hi\EretailApp.resources.dll
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\bin\Release\ta\EretailApp.resources.dll
+E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\bin\Release\te\EretailApp.resources.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\obj\Release\EretailApp.Android.csprojResolveAssemblyReference.cache
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\obj\Release\EretailApp.Android.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\obj\Release\EretailApp.Android.pdb
@@ -238,8 +241,5 @@ E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\obj\Release\android\a
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\obj\Release\android\assets\Xamarin.iOS.dll.mdb
-E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\bin\Release\hi\EretailApp.resources.dll
-E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\bin\Release\ta\EretailApp.resources.dll
-E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\bin\Release\te\EretailApp.resources.dll
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\obj\Release\EretailApp.Android.dll.mdb
 E:\Medium\Github\Eretailtest\EretailApp\EretailApp.Android\bin\Release\EretailApp.Android.dll.mdb

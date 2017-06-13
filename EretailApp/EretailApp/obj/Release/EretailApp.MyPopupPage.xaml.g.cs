@@ -9,16 +9,14 @@
 //------------------------------------------------------------------------------
 
 namespace EretailApp {
-    using System;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
     
     
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\Medium\\Github\\Eretailtest\\EretailApp\\EretailApp\\MyPopupPage.xaml")]
     public partial class MyPopupPage : global::Rg.Plugins.Popup.Pages.PopupPage {
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(MyPopupPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MyPopupPage));
         }
     }
 }

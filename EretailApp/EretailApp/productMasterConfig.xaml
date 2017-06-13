@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                xmlns:local="clr-namespace:EretailApp"
-             BackgroundImage="sharukh.png"
-             x:Class="EretailApp.DummyproductForm">
+           BackgroundImage="sharukh.png"
+             x:Class="EretailApp.productMasterConfig">
   
       <StackLayout Padding="0" Spacing="0" Orientation="Vertical"  Margin="10">
    
@@ -62,36 +62,60 @@
     <StackLayout  Orientation="Vertical"  Padding="5" >
       
        <Frame HasShadow="True"  CornerRadius="5"    Margin="10,0,10,10"    BackgroundColor="#FEF0E3" HorizontalOptions="FillAndExpand">
-        <Grid BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" >
-        <Grid.ColumnDefinitions >
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-         <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-         <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-           
-          </Grid.ColumnDefinitions>
+         <Grid BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" >
+           <Grid.ColumnDefinitions >
+             <ColumnDefinition Width="*" />
+             <ColumnDefinition Width="*" />
+             <ColumnDefinition Width="*" />
+             <ColumnDefinition Width="*" />
+             <ColumnDefinition Width="*" />
+             <ColumnDefinition Width="*" />
+             <ColumnDefinition Width="*" />
+             <ColumnDefinition Width="*" />
+             <ColumnDefinition Width="*" />
+             <ColumnDefinition Width="*" />
+
+           </Grid.ColumnDefinitions>
            <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-          </Grid.RowDefinitions>
-          
-        <local:LabelRender Text="{Binding Resources[ProductDescription]}"   Margin="0,0,-6,0"    Grid.Row="0" Grid.Column="0"   Grid.ColumnSpan="2" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  />
-                <local:BoxBorderEntry Placeholder="{Binding Resources[ProductDescription]}"   Grid.Row="0" Grid.Column="2"   Grid.ColumnSpan="8"   FontAttributes="Bold,Italic" VerticalOptions="Center" FontSize="20" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>             
-              
-          
-     <local:LabelRender Text="SKU Code"   Margin="0,0,-6,0"   Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"/>
-   <local:BoxBorderEntry  Placeholder="Enter SKU Code"  FontSize="16" Grid.Row="1" Grid.Column="2"   Grid.ColumnSpan="2" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
-   <local:LabelRender Text="{Binding Resources[BillDescription]}"   Margin="0,0,-6,0" Grid.Row="1" Grid.Column="4"   Grid.ColumnSpan="2"  TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  />
-   <local:BoxBorderEntry  Placeholder="{Binding Resources[BillDescription]}"   FontSize="16" Grid.Row="1" Grid.Column="6"   Grid.ColumnSpan="4" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
-         
-          
-        </Grid>
+             <RowDefinition Height="50" />
+             <RowDefinition Height="50" />
+           </Grid.RowDefinitions>
+
+           <local:LabelRender Text="{Binding Resources[ProductDescription]}"   Margin="0,0,-6,0"    Grid.Row="0" Grid.Column="0"   Grid.ColumnSpan="4" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" >
+             <local:LabelRender.BackgroundColor>
+             <OnPlatform x:TypeArguments="Color">
+               <OnPlatform.WinPhone>#96001D</OnPlatform.WinPhone>
+             <OnPlatform.iOS>#96001D</OnPlatform.iOS>
+              </OnPlatform>
+             </local:LabelRender.BackgroundColor>
+           </local:LabelRender>
+
+           <local:BoxBorderEntry Placeholder="{Binding Resources[ProductDescription]}"   Grid.Row="0" Grid.Column="4"   Grid.ColumnSpan="6"   FontAttributes="Bold,Italic"  FontSize="20" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
+
+
+           <local:LabelRender Text="SKU Code"   Margin="0,0,-6,0"   Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center">
+           <local:LabelRender.BackgroundColor>
+             <OnPlatform x:TypeArguments="Color">
+               <OnPlatform.WinPhone>#96001D</OnPlatform.WinPhone>
+             <OnPlatform.iOS>#96001D</OnPlatform.iOS>
+             </OnPlatform>
+           </local:LabelRender.BackgroundColor>
+           </local:LabelRender>
+           
+           <local:BoxBorderEntry  Placeholder="Enter SKU Code"  FontSize="16" Grid.Row="1" Grid.Column="2"   Grid.ColumnSpan="2" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
+           <local:LabelRender Text="{Binding Resources[BillDescription]}"   Margin="0,0,-6,0" Grid.Row="1" Grid.Column="4"   Grid.ColumnSpan="2"  TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  >
+             <local:LabelRender.BackgroundColor>
+               <OnPlatform x:TypeArguments="Color">
+                 <OnPlatform.WinPhone>#96001D</OnPlatform.WinPhone>
+               <OnPlatform.iOS>#96001D</OnPlatform.iOS>
+               </OnPlatform>
+             </local:LabelRender.BackgroundColor>
+           </local:LabelRender>
+           
+           <local:BoxBorderEntry  Placeholder="{Binding Resources[BillDescription]}"   FontSize="16" Grid.Row="1" Grid.Column="6"   Grid.ColumnSpan="4" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
+
+
+         </Grid>
          </Frame>
        </StackLayout>
       
@@ -161,19 +185,46 @@
                         </Picker.Items>
                       </Picker>
               
-                         <local:LabelRender Text="UOM"   Margin="0,0,-6,0"  Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"  TextColor="White"    HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"    FontSize="14" />
-                    <local:BoxBorderEntry  x:Name="entryUom"  Placeholder="Enter UOM"    Grid.Row="5" Grid.Column="2"   Grid.ColumnSpan="3"  FontSize="16" TextColor="#787878" PlaceholderColor="#FFED9EA6"/> 
+                         <local:LabelRender Text="UOM"   Margin="0,0,-6,0"  Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"  TextColor="White"    HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"    FontSize="14" >
+              <local:LabelRender.BackgroundColor>
+                <OnPlatform x:TypeArguments="Color">
+                  <OnPlatform.WinPhone>#96001D</OnPlatform.WinPhone>
+                <OnPlatform.iOS>#96001D</OnPlatform.iOS>
+                </OnPlatform>
+              </local:LabelRender.BackgroundColor>
+              </local:LabelRender>
+              
+              
+              
+              <local:BoxBorderEntry  x:Name="entryUom"  Placeholder="Enter UOM"    Grid.Row="5" Grid.Column="2"   Grid.ColumnSpan="3"  FontSize="16" TextColor="#787878" PlaceholderColor="#FFED9EA6"/> 
                  
-                   <local:LabelRender Text="Tax"   Margin="0,0,-6,0"   TextColor="White"    Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="2" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  FontSize="14" />
-                    <local:BoxBorderEntry  x:Name="entryTax"   Placeholder="0.00"  FontSize="16"  Grid.Row="5" Grid.Column="7" Grid.ColumnSpan="3"  TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
+                   <local:LabelRender Text="Tax"   Margin="0,0,-6,0"   TextColor="White"    Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="2" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  FontSize="14" >
+              <local:LabelRender.BackgroundColor>
+                <OnPlatform x:TypeArguments="Color">
+                  <OnPlatform.WinPhone>#96001D</OnPlatform.WinPhone>
+                <OnPlatform.iOS>#96001D</OnPlatform.iOS>
+                </OnPlatform>
+              </local:LabelRender.BackgroundColor>
+              </local:LabelRender>
+              
+              
+              <local:BoxBorderEntry  x:Name="entryTax"   Placeholder="0.00"  FontSize="16"  Grid.Row="5" Grid.Column="7" Grid.ColumnSpan="3"  TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
               
               
                  
                    
                  
                  
-                    <local:LabelRender Text="Vendor"  Grid.Row="4" Grid.Column="0"  Grid.ColumnSpan="4"  Margin="0,0,-6,0" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"   />
-                     <local:BoxBorderEntry  Placeholder="Enter Vendor" FontSize="16" Grid.Row="4" Grid.Column="4"  Grid.ColumnSpan="6"    TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
+                    <local:LabelRender Text="Vendor"  Grid.Row="4" Grid.Column="0"  Grid.ColumnSpan="4"  Margin="0,0,-6,0" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center">
+              <local:LabelRender.BackgroundColor>
+                <OnPlatform x:TypeArguments="Color">
+                  <OnPlatform.WinPhone>#96001D</OnPlatform.WinPhone>
+                 <OnPlatform.iOS>#96001D</OnPlatform.iOS>
+                </OnPlatform>
+              </local:LabelRender.BackgroundColor>
+              </local:LabelRender>
+              
+              <local:BoxBorderEntry  Placeholder="Enter Vendor" FontSize="16" Grid.Row="4" Grid.Column="4"  Grid.ColumnSpan="6"    TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
                   
                
                  
@@ -314,17 +365,35 @@
                <RowDefinition Height="50" />
            </Grid.RowDefinitions>
               
-               <local:LabelRender  Text="Cost Price"  Margin="0,0,-6,0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  FontSize="14"  FontFamily="Bold" TextColor="White"/>
-
+               <local:LabelRender  Text="Cost Price"  Margin="0,0,-6,0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  FontSize="14"  FontFamily="Bold" TextColor="White">
+              <local:LabelRender.BackgroundColor>
+                <OnPlatform x:TypeArguments="Color">
+                  <OnPlatform.WinPhone>#96001D</OnPlatform.WinPhone>
+                <OnPlatform.iOS>#96001D</OnPlatform.iOS>
+                </OnPlatform>
+              </local:LabelRender.BackgroundColor>
+              </local:LabelRender>
                 
                       <local:BoxBorderEntry   Grid.Row="0" Grid.Column="2"  Grid.ColumnSpan="2"  FontSize="16"  Keyboard="Text" Placeholder="0.00"    TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
-             
-              
-                         <local:LabelRender  x:Name="labelMark"    Text="MarkUp"   Margin="0,0,-8,0"  Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2"  TextColor="White"    HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"    FontSize="14" />
-                    <local:BoxBorderEntry  x:Name="entryMark" Placeholder="Enter MarkUp"    Grid.Row="0" Grid.Column="6"   Grid.ColumnSpan="3"  FontSize="16" TextColor="White" PlaceholderColor="#FFED9EA6"/> 
+             <local:LabelRender  x:Name="labelMark"    Text="MarkUp"   Margin="0,0,-8,0"  Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2"  TextColor="White"    HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"    FontSize="14" >
+              <local:LabelRender.BackgroundColor>
+                <OnPlatform x:TypeArguments="Color">
+                  <OnPlatform.WinPhone>#96001D</OnPlatform.WinPhone>
+                  <OnPlatform.iOS>#96001D</OnPlatform.iOS>
+                </OnPlatform>
+              </local:LabelRender.BackgroundColor>
+              </local:LabelRender>
+              <local:BoxBorderEntry  x:Name="entryMark" Placeholder="Enter MarkUp"    Grid.Row="0" Grid.Column="6"   Grid.ColumnSpan="3"  FontSize="16" TextColor="White" PlaceholderColor="#FFED9EA6"/> 
                  
-                   <local:LabelRender Text="Discount On MRP "     TextColor="White"    Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="2" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  FontSize="14" />
-                    <Image Aspect="AspectFit"  Source="plustw.png"  Grid.Row="0" Grid.Column="11"  VerticalOptions="Center"  >
+                   <local:LabelRender Text="Discount On MRP "     TextColor="White"    Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="2" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  FontSize="14" >
+              <local:LabelRender.BackgroundColor>
+                <OnPlatform x:TypeArguments="Color">
+                  <OnPlatform.WinPhone>#96001D</OnPlatform.WinPhone>
+                <OnPlatform.iOS>#96001D</OnPlatform.iOS>
+                </OnPlatform>
+              </local:LabelRender.BackgroundColor>
+              </local:LabelRender>
+              <Image Aspect="AspectFit"  Source="plustw.png"  Grid.Row="0" Grid.Column="11"  VerticalOptions="Center"  >
                        
                       </Image>
                     </Grid>    
@@ -348,16 +417,31 @@
          
            </Grid.RowDefinitions>
            
-             <local:LabelRender   Margin="0,0,-6,0"  Text="QOH"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  FontSize="14"    FontFamily="Bold" TextColor="White"/>
-
+             <local:LabelRender   Margin="0,0,-6,0"  Text="QOH"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  FontSize="14"    FontFamily="Bold" TextColor="White">
+           <local:LabelRender.BackgroundColor>
+             <OnPlatform x:TypeArguments="Color">
+               <OnPlatform.WinPhone>#96001D</OnPlatform.WinPhone>
+             <OnPlatform.iOS>#96001D</OnPlatform.iOS>
+             </OnPlatform>
+           </local:LabelRender.BackgroundColor>
+           </local:LabelRender>
                 
                       <local:BoxBorderEntry   Grid.Row="0" Grid.Column="2"  Grid.ColumnSpan="2"  FontSize="16"  Keyboard="Text" Placeholder="0.00"    TextColor="#787878" PlaceholderColor="#FFED9EA6"/>
               <Image Aspect="AspectFit"  Source="plusminustw.png"  Grid.Row="0" Grid.Column="4"  VerticalOptions="Center"  >
                        
                       </Image>
               
-                         <local:LabelRender Text="MBQ"   Margin="0,0,-6,0"  Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="2"  TextColor="White"    HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"    FontSize="14" />
-                    <local:BoxBorderEntry   Placeholder="0.000"    Grid.Row="0" Grid.Column="7"   Grid.ColumnSpan="3"  FontSize="16" TextColor="White" PlaceholderColor="#FFED9EA6"/> 
+                         <local:LabelRender Text="MBQ"   Margin="0,0,-6,0"  Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="2"  TextColor="White"    HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"    FontSize="14" >
+           <local:LabelRender.BackgroundColor>
+             <OnPlatform x:TypeArguments="Color">
+               <OnPlatform.WinPhone>#96001D</OnPlatform.WinPhone>
+             <OnPlatform.iOS>#96001D</OnPlatform.iOS>
+             </OnPlatform>
+           </local:LabelRender.BackgroundColor>
+           </local:LabelRender>
+           
+           
+           <local:BoxBorderEntry   Placeholder="0.000"    Grid.Row="0" Grid.Column="7"   Grid.ColumnSpan="3"  FontSize="16" TextColor="White" PlaceholderColor="#FFED9EA6"/> 
                  
                  </Grid>
       </StackLayout>
@@ -388,8 +472,16 @@
             <RowDefinition Height="50" />
           </Grid.RowDefinitions>
         
-               <local:LabelRender Text="EAN "   Margin="0,0,-6,0"    Grid.Row="0" Grid.Column="0"   Grid.ColumnSpan="2" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  />
-                <local:BoxBorderEntry Placeholder="Enter EAN"   Grid.Row="0" Grid.Column="2"   Grid.ColumnSpan="7"  FontSize="16" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>             
+               <local:LabelRender Text="EAN "   Margin="0,0,-6,0"    Grid.Row="0" Grid.Column="0"   Grid.ColumnSpan="2" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  >
+          <local:LabelRender.BackgroundColor>
+            <OnPlatform x:TypeArguments="Color">
+              <OnPlatform.WinPhone>#96001D</OnPlatform.WinPhone>
+            <OnPlatform.iOS>#96001D</OnPlatform.iOS>
+            </OnPlatform>
+          </local:LabelRender.BackgroundColor>
+          </local:LabelRender>
+          
+          <local:BoxBorderEntry Placeholder="Enter EAN"   Grid.Row="0" Grid.Column="2"   Grid.ColumnSpan="7"  FontSize="16" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>             
          
             <Image Aspect="AspectFill" Margin="10" Source="plustw.png" VerticalOptions="Center" HorizontalOptions="End" Grid.Row="0" Grid.Column="9">
         
@@ -426,8 +518,16 @@
             <RowDefinition Height="50" />
           </Grid.RowDefinitions>
         
-               <local:LabelRender Text="HSN Code "   Margin="0,0,-6,0"    Grid.Row="0" Grid.Column="0"   Grid.ColumnSpan="2" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"  />
-                <local:BoxBorderEntry Placeholder="Enter HSN Code"   Grid.Row="0" Grid.Column="2"   Grid.ColumnSpan="8"  FontSize="16" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>             
+               <local:LabelRender Text="HSN Code "   Margin="0,0,-6,0"    Grid.Row="0" Grid.Column="0"   Grid.ColumnSpan="2" TextColor="White"   FontSize="14"  HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" >
+          <local:LabelRender.BackgroundColor>
+            <OnPlatform x:TypeArguments="Color">
+              <OnPlatform.WinPhone>#96001D</OnPlatform.WinPhone>
+            <OnPlatform.iOS>#96001D</OnPlatform.iOS>
+              </OnPlatform>
+          </local:LabelRender.BackgroundColor>
+          </local:LabelRender>
+
+          <local:BoxBorderEntry Placeholder="Enter HSN Code"   Grid.Row="0" Grid.Column="2"   Grid.ColumnSpan="8"  FontSize="16" TextColor="#787878" PlaceholderColor="#FFED9EA6"/>             
          
           
         </Grid>
@@ -565,28 +665,7 @@
            
            
             <!-- Heirachy Group Popup End -->      
-           
-           
-           
-      
-           
-           
-          
-           
-           
-           
-           
-          
-          
-         
-    
-  
- 
-
-
-
-    
-        </AbsoluteLayout>
+           </AbsoluteLayout>
       </StackLayout>
    </ScrollView>
     </StackLayout>

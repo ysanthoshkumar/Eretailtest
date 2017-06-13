@@ -361,6 +361,15 @@
     <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\EretailApp.dll">
       <PackagePath>EretailApp.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\hi\EretailApp.resources.dll">
+      <PackagePath>hi\EretailApp.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\ta\EretailApp.resources.dll">
+      <PackagePath>ta\EretailApp.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp\bin\Debug\te\EretailApp.resources.dll">
+      <PackagePath>te\EretailApp.resources.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\AdditionIcon.png">
       <PackagePath>AdditionIcon.png</PackagePath>
     </AppxPackagedFile>
@@ -457,6 +466,9 @@
     <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\leftarr.png">
       <PackagePath>leftarr.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\leftcir.png">
+      <PackagePath>leftcir.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\logo.png">
       <PackagePath>logo.png</PackagePath>
     </AppxPackagedFile>
@@ -465,6 +477,24 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\minusIcon.png">
       <PackagePath>minusIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\plusminussixten.png">
+      <PackagePath>plusminussixten.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\plusminustf.png">
+      <PackagePath>plusminustf.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\plusminustw.png">
+      <PackagePath>plusminustw.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\plussixten.png">
+      <PackagePath>plussixten.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\plustf.png">
+      <PackagePath>plustf.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\plustw.png">
+      <PackagePath>plustw.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\prod.png">
       <PackagePath>prod.png</PackagePath>
@@ -602,6 +632,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\setting.png">
       <PackagePath>setting.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\sharukh.png">
+      <PackagePath>sharukh.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Medium\Github\Eretailtest\EretailApp\EretailApp.UWP\sss.png">
       <PackagePath>sss.png</PackagePath>

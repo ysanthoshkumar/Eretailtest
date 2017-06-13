@@ -11,7 +11,7 @@ using Xamarin.Forms.Platform.UWP;
 [assembly: ExportRenderer(typeof(LabelRenderer), typeof(BorderLabelRender))]
 namespace EretailApp.UWP
 {
-    class BorderLabelRender : LabelRenderer
+   public class BorderLabelRender : LabelRenderer
     {
         protected override void OnElementChanged(ElementChangedEventArgs<Label> e)
         {
@@ -20,7 +20,7 @@ namespace EretailApp.UWP
             if (Control != null)
             {
                 
-                Control.Foreground = new SolidColorBrush(Colors.DarkGray);
+               
             }
         }
     }

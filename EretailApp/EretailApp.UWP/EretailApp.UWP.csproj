@@ -145,6 +145,7 @@
     <Content Include="home.png" />
     <Content Include="ic_user.png" />
     <Content Include="leftarr.png" />
+    <Content Include="leftcir.png" />
     <Content Include="logo.png" />
     <Content Include="logout.png" />
     <Content Include="minusIcon.png" />
@@ -192,6 +193,7 @@
     <Content Include="saleee.png" />
     <Content Include="sales.png" />
     <Content Include="setting.png" />
+    <Content Include="sharukh.png" />
     <Content Include="sss.png" />
     <Content Include="Star.png" />
     <Content Include="supply.png" />
